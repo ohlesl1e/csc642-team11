@@ -28,9 +28,9 @@ function Result() {
                             </Row>
                             <Row>
                                 <div>
-                                    <Col><Button variant='outline-primary' size="lg" style={{ fontWeight: 'bold',marginBottom:'40px',width:'350px',height:'60px' }}>Questions? Contact with seller!</Button></Col>
-                                    <Col><Button variant='success' size="lg" style={{ fontWeight: 'bold',marginBottom:'20px',width:'350px',height:'60px'}}>Add to Cart</Button></Col>
-                                    <Col><Button variant='warning' size="lg" style={{ fontWeight: 'bold',marginBottom:'20px',width:'350px',height:'60px' }}>Buy Now</Button></Col>
+                                    <Col><Button variant='outline-primary' size="lg" style={{ fontWeight: 'bold',marginBottom:'40px',width:'350px',height:'60px',borderRadius: '20px' }}>Questions? Contact with seller!</Button></Col>
+                                    <Col><Button variant='success' size="lg" style={{ fontWeight: 'bold',marginBottom:'20px',width:'350px',height:'60px',borderRadius: '20px'}}>Add to Cart</Button></Col>
+                                    <Col><Button variant='warning' size="lg" style={{ fontWeight: 'bold',marginBottom:'20px',width:'350px',height:'60px',borderRadius: '20px' }}>Buy Now</Button></Col>
                                 </div>
                             </Row>
                         </Col>

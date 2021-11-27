@@ -10,14 +10,14 @@ function Search() {
                 <h4 style={{ fontWeight: 'bold', marginTop: '50px' }}>Showing 1 to 2 out of 2 items : </h4>
                 <div style={{ marginLeft: '1080px', marginBottom: '20px' }}>
                     <Form>
-                        <Form.Select defaultValue='All' style={{ fontWeight: 'bold', fontSize: '20px', color: '#224466', border: '3px solid blue' }}>
+                        <Form.Select defaultValue='All' style={{ fontWeight: 'bold', fontSize: '20px', color: '#224466', border: '2px solid blue' }}>
                             <option>Price: low to high</option>
                             <option>Price: high to low</option>
                         </Form.Select>
                     </Form>
                 </div>
                 <div id="result-cards">
-                    <div id="result-card1" style={{ border: '2px solid grey', borderRadius: '20px', width: '800px', height: '200px', margin: 'auto', marginBottom: '50px' }}>
+                    <div id="result-card1" style={{ border: '2px solid grey', borderRadius: '20px', width: '800px', height: '210px', margin: 'auto', marginBottom: '50px' }}>
                         <Row>
                             <Col>
                                 <div style={{ marginTop: '20px', marginLeft: '20px' }}>
@@ -32,15 +32,15 @@ function Search() {
                                 </div>
                             </Col>
                             <Col>
-                                <div style={{ marginLeft: '50px' }}>
-                                    <Button variant='primary' size="lg" style={{ fontWeight: 'bold', marginTop: '15px' }}>View More</Button>
-                                    <Button variant='success' size="lg" style={{ fontWeight: 'bold', marginTop: '15px' }}>Add to Cart</Button>
-                                    <Button variant='warning' size="lg" style={{ fontWeight: 'bold', marginTop: '15px' }}>Buy Now</Button>
+                                <div style={{ marginLeft: '30px' }}>
+                                    <Button variant='outline-primary' size="lg" style={{ fontWeight: 'bold', marginTop: '15px',width:'180px',height:'50px',borderRadius: '20px'}}>View More</Button>
+                                    <Button variant='success' size="lg" style={{ fontWeight: 'bold', marginTop: '15px',width:'180px',height:'50px',borderRadius: '20px'}}>Add to Cart</Button>
+                                    <Button variant='warning' size="lg" style={{ fontWeight: 'bold', marginTop: '15px',width:'180px',height:'50px',borderRadius: '20px' }}>Buy Now</Button>
                                 </div>
                             </Col>
                         </Row>
                     </div>
-                    <div id="result-card2" style={{ border: '2px solid grey', borderRadius: '20px', width: '800px', height: '200px', margin: 'auto', marginBottom: '50px' }}>
+                    <div id="result-card2" style={{ border: '2px solid grey', borderRadius: '20px', width: '800px', height: '210px', margin: 'auto', marginBottom: '50px' }}>
                         <Row>
                             <Col>
                                 <div style={{ marginTop: '20px', marginLeft: '20px' }}>
@@ -55,10 +55,10 @@ function Search() {
                                 </div>
                             </Col>
                             <Col>
-                                <div style={{ marginLeft: '50px' }}>
-                                    <Button variant='primary' size="lg" style={{ fontWeight: 'bold', marginTop: '15px' }}>View More</Button>
-                                    <Button variant='success' size="lg" style={{ fontWeight: 'bold', marginTop: '15px' }}>Add to Cart</Button>
-                                    <Button variant='warning' size="lg" style={{ fontWeight: 'bold', marginTop: '15px' }}>Buy Now</Button>
+                                <div style={{ marginLeft: '30px' }}>
+                                    <Button variant='outline-primary' size="lg" style={{ fontWeight: 'bold', marginTop: '15px',width:'180px',height:'50px',borderRadius: '20px' }}>View More</Button>
+                                    <Button variant='success' size="lg" style={{ fontWeight: 'bold', marginTop: '15px',width:'180px',height:'50px',borderRadius: '20px' }}>Add to Cart</Button>
+                                    <Button variant='warning' size="lg" style={{ fontWeight: 'bold', marginTop: '15px',width:'180px',height:'50px',borderRadius: '20px' }}>Buy Now</Button>
                                 </div>
                             </Col>
                         </Row>
