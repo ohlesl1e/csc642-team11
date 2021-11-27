@@ -53,7 +53,8 @@ function Home() {
                                     <img src={chair} width="400px" height="300px" />
                                     <div style={{ display: 'flex', marginTop: '10px' }}>
                                         <h5 style={{ marginRight: '240px' }}>Laptop</h5>
-                                        <Button variant='success' size="lg" style={{ fontWeight: 'bold' }}>Buy</Button></div>
+                                        <Button variant='success' size="lg" style={{ fontWeight: 'bold' }}>Buy</Button>
+                                        </div>
                                     <h5 style={{ marginTop: '-20px' }}>$300</h5>
                                 </div>
                             </Col>

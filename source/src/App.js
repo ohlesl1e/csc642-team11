@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Footer from './pages/Footer';
 import Header from './pages/Header';
 import Home from './pages/Home';
+import Search from './pages/Search';
 
 function App() {
     return (
@@ -11,6 +12,7 @@ function App() {
             <Header />
             <Routes>
                 <Route exact path='/' element={<Home />} />
+                <Route path='/Search' element={<Search />} />
             </Routes>
             <Footer />
         </div>
