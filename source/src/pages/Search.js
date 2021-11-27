@@ -7,10 +7,10 @@ function Search() {
     return (
         <div>
             <Container>
-                <h4 style={{ fontWeight: 'bold', marginTop: '50px'}}>Showing 1 to 2 out of 2 items : </h4>
+                <h4 style={{ fontWeight: 'bold', marginTop: '50px' }}>Showing 1 to 2 out of 2 items : </h4>
                 <div style={{ marginLeft: '1080px', marginBottom: '20px' }}>
                     <Form>
-                        <Form.Select defaultValue='All' style={{fontWeight:'bold',fontSize:'20px',color:'#224466',border:'3px solid blue'}}>
+                        <Form.Select defaultValue='All' style={{ fontWeight: 'bold', fontSize: '20px', color: '#224466', border: '3px solid blue' }}>
                             <option>Price: low to high</option>
                             <option>Price: high to low</option>
                         </Form.Select>
@@ -33,8 +33,9 @@ function Search() {
                             </Col>
                             <Col>
                                 <div style={{ marginLeft: '50px' }}>
-                                    <Button variant='warning' size="lg" style={{ fontWeight: 'bold', marginTop: '60px' }}>Buy Now</Button>
-                                    <Button variant='success' size="lg" style={{ fontWeight: 'bold', marginTop: '20px' }}>Add to Cart</Button>
+                                    <Button variant='primary' size="lg" style={{ fontWeight: 'bold', marginTop: '15px' }}>View More</Button>
+                                    <Button variant='success' size="lg" style={{ fontWeight: 'bold', marginTop: '15px' }}>Add to Cart</Button>
+                                    <Button variant='warning' size="lg" style={{ fontWeight: 'bold', marginTop: '15px' }}>Buy Now</Button>
                                 </div>
                             </Col>
                         </Row>
@@ -55,8 +56,9 @@ function Search() {
                             </Col>
                             <Col>
                                 <div style={{ marginLeft: '50px' }}>
-                                    <Button variant='warning' size="lg" style={{ fontWeight: 'bold', marginTop: '60px' }}>Buy Now</Button>
-                                    <Button variant='success' size="lg" style={{ fontWeight: 'bold', marginTop: '20px' }}>Add to Cart</Button>
+                                    <Button variant='primary' size="lg" style={{ fontWeight: 'bold', marginTop: '15px' }}>View More</Button>
+                                    <Button variant='success' size="lg" style={{ fontWeight: 'bold', marginTop: '15px' }}>Add to Cart</Button>
+                                    <Button variant='warning' size="lg" style={{ fontWeight: 'bold', marginTop: '15px' }}>Buy Now</Button>
                                 </div>
                             </Col>
                         </Row>
