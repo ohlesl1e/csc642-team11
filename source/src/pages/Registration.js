@@ -8,7 +8,7 @@ function Registration() {
             <Container>
                 <h3 class="text-center" style={{ fontWeight: 'bold', marginTop: '30px', color: 'purple' }}>Create a New Account</h3>
                 <h4 style={{ color: 'blue', marginLeft: '1000px' }}>* are mandatory</h4>
-                <form action="/" id="surveyform" class="needs-validation" novalidate style={{ width: '600px', margin: 'auto', fontWeight: 'bold', fontSize: '20px' }}>
+                <form action="/Login" style={{ width: '600px', margin: 'auto', fontWeight: 'bold', fontSize: '20px' }}>
                     <div class="form-group">
                         <label for="firstname" style={{ marginTop: '20px', marginBottom: '10px' }}>*Firstname</label>
                         <input type="text" name="firstname" id="firstname" class="form-control" placeholder="John" required
@@ -44,10 +44,9 @@ function Registration() {
                     </div>
                     <div style={{ textAlign: 'center', marginTop: '30px' }}>
                         <label>Already had an account?</label><br />
-                        <a href="/">Sign in here!</a>
+                        <a href="/Login">Sign in here!</a>
                     </div>
                 </form>
-
             </Container>
         </div >
     )

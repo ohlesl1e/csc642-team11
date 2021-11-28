@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import Search from './pages/Search';
 import Result from './pages/Result';
 import Registration from './pages/Registration';
+import Login from './pages/Login';
 
 function App() {
     return (
@@ -17,6 +18,7 @@ function App() {
                 <Route path='/Search' element={<Search />} />
                 <Route path='/Result' element={<Result />} />
                 <Route path='/Registration' element={<Registration />} />
+                <Route path='/Login' element={<Login />} />
             </Routes>
             <Footer />
         </div>
