@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container, Row, Col, Button, Form } from 'react-bootstrap'
+import { Link } from "react-router-dom";
 import laptop1 from '../images/laptop.jpeg'
 import laptop2 from '../images/laptop2.jpeg'
 
@@ -33,9 +34,9 @@ function Search() {
                             </Col>
                             <Col>
                                 <div style={{ marginLeft: '30px' }}>
-                                    <Button variant='outline-primary' size="lg" style={{ fontWeight: 'bold', marginTop: '15px',width:'180px',height:'50px',borderRadius: '20px'}}>View More</Button>
-                                    <Button variant='success' size="lg" style={{ fontWeight: 'bold', marginTop: '15px',width:'180px',height:'50px',borderRadius: '20px'}}>Add to Cart</Button>
-                                    <Button variant='warning' size="lg" style={{ fontWeight: 'bold', marginTop: '15px',width:'180px',height:'50px',borderRadius: '20px' }}>Buy Now</Button>
+                                    <Link to="/Result"><Button variant='outline-primary' size="lg" style={{ fontWeight: 'bold', marginTop: '15px', width: '180px', height: '50px', borderRadius: '20px' }}>View More</Button></Link>
+                                    <Button variant='success' size="lg" style={{ fontWeight: 'bold', marginTop: '15px', width: '180px', height: '50px', borderRadius: '20px' }}>Add to Cart</Button>
+                                    <Button variant='warning' size="lg" style={{ fontWeight: 'bold', marginTop: '15px', width: '180px', height: '50px', borderRadius: '20px' }}>Buy Now</Button>
                                 </div>
                             </Col>
                         </Row>
@@ -56,9 +57,9 @@ function Search() {
                             </Col>
                             <Col>
                                 <div style={{ marginLeft: '30px' }}>
-                                    <Button variant='outline-primary' size="lg" style={{ fontWeight: 'bold', marginTop: '15px',width:'180px',height:'50px',borderRadius: '20px' }}>View More</Button>
-                                    <Button variant='success' size="lg" style={{ fontWeight: 'bold', marginTop: '15px',width:'180px',height:'50px',borderRadius: '20px' }}>Add to Cart</Button>
-                                    <Button variant='warning' size="lg" style={{ fontWeight: 'bold', marginTop: '15px',width:'180px',height:'50px',borderRadius: '20px' }}>Buy Now</Button>
+                                    <Link to="/Result"><Button variant='outline-primary' size="lg" style={{ fontWeight: 'bold', marginTop: '15px', width: '180px', height: '50px', borderRadius: '20px' }}>View More</Button></Link>
+                                    <Button variant='success' size="lg" style={{ fontWeight: 'bold', marginTop: '15px', width: '180px', height: '50px', borderRadius: '20px' }}>Add to Cart</Button>
+                                    <Button variant='warning' size="lg" style={{ fontWeight: 'bold', marginTop: '15px', width: '180px', height: '50px', borderRadius: '20px' }}>Buy Now</Button>
                                 </div>
                             </Col>
                         </Row>
