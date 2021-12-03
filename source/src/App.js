@@ -15,7 +15,6 @@ import Login from './pages/Login';
 import Checkout from './pages/Checkout';
 import Confirmation from './pages/Confirmation';
 
-
 function App() {
     return (
         <div className="App" style={{height: '100vh'}}>
