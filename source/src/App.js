@@ -5,9 +5,9 @@ import Footer from './pages/Footer';
 import Header from './pages/Header';
 import Home from './pages/Home';
 
+
 import Seller from './pages/Seller Page';
 import Listing from './pages/Create Listing';
-
 import Search from './pages/Search';
 import Result from './pages/Result';
 import Registration from './pages/Registration';
