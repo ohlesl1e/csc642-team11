@@ -6,16 +6,16 @@ import { Link } from 'react-router-dom';
 function Header() {
     return (
         <div>
-            <Navbar expand='lg' sticky='top' variant='dark' style={{ backgroundColor:'#683A7E'}}>
+            <Navbar expand='lg' sticky='top' variant='dark' style={{ backgroundColor: '#683A7E' }}>
                 <Container>
-                    <Navbar.Brand className='nav-bar-element'>GatorBuy</Navbar.Brand>
+                    <Navbar.Brand className='nav-bar-element'><a href='/' style={{ color: 'white', textDecoration: 'none' }}>GatorBuy</a></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className='nav-fill w-100 nav-bar-element'>
                             <Nav.Item>
                                 <Form>
                                     <InputGroup>
-                                        <Form.Select defaultValue='All' style={{maxWidth:'20%'}}>
+                                        <Form.Select defaultValue='All' style={{ maxWidth: '20%' }}>
                                             <option>All</option>
                                             <option>Textbooks</option>
                                             <option>Cloathing</option>

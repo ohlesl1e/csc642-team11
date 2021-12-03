@@ -36,7 +36,7 @@ function Registration() {
                     </div>
                     <div class="form-check" id="agreeterms" style={{ marginTop: '20px', marginBottom: '40px' }}>
                         <input type="checkbox" class="form-check-input" id="terms" required />
-                        <label class="form-check-label" for="terms">* I have read and agree to the <a href="http://www.sfsu.edu">terms and conditions</a></label>
+                        <label class="form-check-label" for="terms">* I have read and agree to the <a href="https://youtu.be/dQw4w9WgXcQ">terms and conditions</a></label>
                     </div>
                     <div>
                         <Link to="/"><button class="btn btn-danger btn-lg" id="cancel-button" style={{ marginRight: '20px', width: '275px' }}>Cancel</button></Link>
