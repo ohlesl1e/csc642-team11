@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container, Row, Col, Button } from 'react-bootstrap'
+import { Link } from "react-router-dom";
 import notebook from '../images/notebook.jpeg'
 import laptop from '../images/laptop.jpeg'
 import lamp from '../images/lamp.jpeg'
@@ -13,15 +14,15 @@ function Home() {
             <Container>
                 <div id="home-body">
                     <div id="home-title">
-                        <h1 style={{fontWeight:'bold',color:'#5d2975',marginTop:'40px'}}>Buy and sell your items on campus!</h1>
-                        <h1 style={{fontWeight:'bold',color:'#5d2975'}}>We help ypu save money!</h1>
+                        <h1 style={{ fontWeight: 'bold', color: '#5d2975', marginTop: '40px' }}>Buy and sell your items on campus!</h1>
+                        <h1 style={{ fontWeight: 'bold', color: '#5d2975' }}>We help ypu save money!</h1>
                     </div>
                     <div id="item-cards">
-                        <h4 style={{fontWeight:'bold',marginTop:'40px',marginBottom:'-30px'}}>New Posted items : </h4>
+                        <h4 style={{ fontWeight: 'bold', marginTop: '40px', marginBottom: '-30px' }}>New Posted items : </h4>
                         <Row>
                             <Col>
-                                <div id="item-card1" style={{marginTop: '40px' }}>
-                                    <img src={notebook} width="400px" height="300px" />
+                                <div id="item-card1" style={{ marginTop: '40px' }}>
+                                    <Link to="/Result"><img src={notebook} width="400px" height="300px" /></Link>
                                     <div style={{ display: 'flex', marginTop: '10px' }}>
                                         <h5 style={{ marginRight: '220px' }}>Notebook</h5>
                                         <Button variant='success' size="lg" style={{ fontWeight: 'bold' }}>Buy</Button></div>
@@ -29,8 +30,8 @@ function Home() {
                                 </div>
                             </Col>
                             <Col>
-                                <div id="item-card2" style={{marginTop: '40px' }}>
-                                    <img src={laptop} width="400px" height="300px" />
+                                <div id="item-card2" style={{ marginTop: '40px' }}>
+                                    <Link to="/Result"><img src={laptop} width="400px" height="300px" /></Link>
                                     <div style={{ display: 'flex', marginTop: '10px' }}>
                                         <h5 style={{ marginRight: '240px' }}>Laptop</h5>
                                         <Button variant='success' size="lg" style={{ fontWeight: 'bold' }}>Buy</Button></div>
@@ -38,42 +39,42 @@ function Home() {
                                 </div>
                             </Col>
                             <Col>
-                            <div id="item-card3" style={{marginTop: '40px' }}>
-                                    <img src={lamp} width="400px" height="300px" />
+                                <div id="item-card3" style={{ marginTop: '40px' }}>
+                                    <Link to="/Result"><img src={lamp} width="400px" height="300px" /></Link>
                                     <div style={{ display: 'flex', marginTop: '10px' }}>
-                                        <h5 style={{ marginRight: '240px' }}>Laptop</h5>
+                                        <h5 style={{ marginRight: '240px' }}>Lamp</h5>
                                         <Button variant='success' size="lg" style={{ fontWeight: 'bold' }}>Buy</Button></div>
-                                    <h5 style={{ marginTop: '-20px' }}>$300</h5>
+                                    <h5 style={{ marginTop: '-20px' }}>$9</h5>
                                 </div>
                             </Col>
                         </Row>
                         <Row>
                             <Col>
-                            <div id="item-card4" style={{marginTop: '40px' }}>
-                                    <img src={chair} width="400px" height="300px" />
+                                <div id="item-card4" style={{ marginTop: '40px' }}>
+                                    <Link to="/Result"><img src={chair} width="400px" height="300px" /></Link>
                                     <div style={{ display: 'flex', marginTop: '10px' }}>
-                                        <h5 style={{ marginRight: '240px' }}>Laptop</h5>
+                                        <h5 style={{ marginRight: '240px' }}>Chair</h5>
                                         <Button variant='success' size="lg" style={{ fontWeight: 'bold' }}>Buy</Button>
-                                        </div>
-                                    <h5 style={{ marginTop: '-20px' }}>$300</h5>
+                                    </div>
+                                    <h5 style={{ marginTop: '-20px' }}>$7</h5>
                                 </div>
                             </Col>
                             <Col>
-                            <div id="item-card5" style={{marginTop: '40px' }}>
-                                    <img src={clock} width="400px" height="300px" />
+                                <div id="item-card5" style={{ marginTop: '40px' }}>
+                                    <Link to="/Result"><img src={clock} width="400px" height="300px" /></Link>
                                     <div style={{ display: 'flex', marginTop: '10px' }}>
-                                        <h5 style={{ marginRight: '240px' }}>Laptop</h5>
+                                        <h5 style={{ marginRight: '240px' }}>Clock</h5>
                                         <Button variant='success' size="lg" style={{ fontWeight: 'bold' }}>Buy</Button></div>
-                                    <h5 style={{ marginTop: '-20px' }}>$300</h5>
+                                    <h5 style={{ marginTop: '-20px' }}>$4</h5>
                                 </div>
                             </Col>
                             <Col>
-                            <div id="item-card6" style={{marginTop: '40px' }}>
-                                    <img src={textbook} width="400px" height="300px" />
+                                <div id="item-card6" style={{ marginTop: '40px' }}>
+                                    <Link to="/Result"><img src={textbook} width="400px" height="300px" /></Link>
                                     <div style={{ display: 'flex', marginTop: '10px' }}>
-                                        <h5 style={{ marginRight: '240px' }}>Laptop</h5>
+                                        <h5 style={{ marginRight: '240px' }}>textbook</h5>
                                         <Button variant='success' size="lg" style={{ fontWeight: 'bold' }}>Buy</Button></div>
-                                    <h5 style={{ marginTop: '-20px' }}>$300</h5>
+                                    <h5 style={{ marginTop: '-20px' }}>$15</h5>
                                 </div>
                             </Col>
                         </Row>
