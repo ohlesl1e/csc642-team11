@@ -1,6 +1,5 @@
-import { Container, Navbar, Nav, Form, FormControl, Button, InputGroup } from 'react-bootstrap';
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import Footer from './pages/Footer';
 import Header from './pages/Header';
 import Home from './pages/Home';
@@ -14,6 +13,7 @@ import Registration from './pages/Registration';
 import Login from './pages/Login';
 import Checkout from './pages/Checkout';
 import Confirmation from './pages/Confirmation';
+
 
 function App() {
     return (
@@ -30,7 +30,6 @@ function App() {
                 <Route path='/notadmin' element={<Login />} />
                 <Route path='/seller' element={<Seller />} />
                 <Route path='/listing' element={<Listing />} />
-
             </Routes>
             <Footer />
         </div>

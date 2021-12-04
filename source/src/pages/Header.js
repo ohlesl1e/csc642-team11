@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../App.css';
-import { Container, Navbar, Nav, Form, FormControl, Button, InputGroup, Col } from 'react-bootstrap';
+import { Container, Navbar, Nav, Form, FormControl, Button, InputGroup, Col, Offcanvas, ListGroup, Badge } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 function Header() {
+    const [show, setShow] = useState(false)
+
+    const handleShow = () => setShow(true)
+    const handleHide = () => setShow(false)
+
     return (
         <div>
             <Navbar expand='lg' sticky='top' variant='dark' style={{ backgroundColor: '#683A7E' }}>
@@ -36,12 +41,46 @@ function Header() {
                         </Nav>
                         <Nav className='nav-bar-element'>
                             <Button className='nav-bar-element' variant='light'>Sell</Button>
-                            <Button className='nav-bar-element' variant='light'>Cart</Button>
+                            <Button className='nav-bar-element' variant='light' onClick={handleShow}>Cart</Button>
                             <Button className='nav-bar-element' variant='warning'>Account</Button>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
+            <Offcanvas show={show} onHide={handleHide} placement='end'>
+                <Offcanvas.Header closeButton>
+                    <Offcanvas.Title>Cart</Offcanvas.Title>
+                </Offcanvas.Header>
+                <Offcanvas.Body>
+                    <a href='/checkout'><Button className='mb-3' style={{ width: '100%' }} variant='warning'>Checkout</Button></a>
+                    <ListGroup as="ol" numbered>
+                        <ListGroup.Item
+                            as="li"
+                            className="d-flex justify-content-between align-items-start"
+                        >
+                            <div className="ms-2 me-auto">
+                                <div className="fw-bold">Textbook</div>
+                                Sophia
+                            </div>
+                            <Badge variant="primary" pill>
+                                $20
+                            </Badge>
+                        </ListGroup.Item>
+                        <ListGroup.Item
+                            as="li"
+                            className="d-flex justify-content-between align-items-start"
+                        >
+                            <div className="ms-2 me-auto">
+                                <div className="fw-bold">Macbook Air</div>
+                                John
+                            </div>
+                            <Badge variant="primary" pill>
+                                $300
+                            </Badge>
+                        </ListGroup.Item>
+                    </ListGroup>
+                </Offcanvas.Body>
+            </Offcanvas>
         </div>
     )
 }
