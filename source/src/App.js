@@ -13,23 +13,25 @@ import Registration from './pages/Registration';
 import Login from './pages/Login';
 import Checkout from './pages/Checkout';
 import Confirmation from './pages/Confirmation';
+import Admin from './pages/Admin';
 
 
 function App() {
     return (
-        <div className="App" style={{ height: '100vh' }}>
+        <div className="App">
             <Header />
             <Routes>
                 <Route exact path='/' element={<Home />} />
                 <Route path='/Search' element={<Search />} />
                 <Route path='/Result' element={<Result />} />
                 <Route path='/Registration' element={<Registration />} />
-                <Route path='/Login' element={<Login />} />
+                <Route path='/Login' element={<Login role='user' />} />
                 <Route path='/checkout' element={<Checkout />} />
                 <Route path='/confirmation' element={<Confirmation />} />
-                <Route path='/notadmin' element={<Login />} />
+                <Route path='/notadmin' element={<Login role='admin' />} />
                 <Route path='/seller' element={<Seller />} />
                 <Route path='/listing' element={<Listing />} />
+                <Route path='/admindashboard' element={<Admin />} />
             </Routes>
             <Footer />
         </div>

@@ -18,14 +18,14 @@ export default function Checkout() {
                                 <Form.Label>*Name</Form.Label>
                                 <Form.Control
                                     placeholder='Enter your name'
-                                    type='name' />
+                                    type='name' style={{ border: '2px solid black', borderRadius: '20px' }} />
                             </Form.Group>
 
                             <Form.Group className='mb-3'>
                                 <Form.Label>*SF State Email</Form.Label>
                                 <Form.Control
                                     placeholder='Enter your SF State email'
-                                    type='email'
+                                    type='email' style={{ border: '2px solid black', borderRadius: '20px' }}
                                 />
                             </Form.Group>
 
@@ -33,13 +33,13 @@ export default function Checkout() {
                                 <Form.Label>*Phone</Form.Label>
                                 <Form.Control
                                     placeholder='Enter your phone number'
-                                    type='tele'
+                                    type='tele' style={{ border: '2px solid black', borderRadius: '20px' }}
                                 />
                             </Form.Group>
 
                             <Form.Group className='mb-3'>
                                 <Form.Label>*Pickup location</Form.Label>
-                                <Form.Select>
+                                <Form.Select style={{ border: '2px solid black', borderRadius: '20px' }}>
                                     <option value=''>Choose...</option>
                                     <option>Baseball Field</option>
                                     <option>Cox Stadium</option>
@@ -58,7 +58,7 @@ export default function Checkout() {
                             <Form.Label>*Pickup time</Form.Label>
                             <Row>
                                 <Form.Group as={Col} className='mb-3'>
-                                    <Form.Select>
+                                    <Form.Select style={{ border: '2px solid black', borderRadius: '20px' }}>
                                         <option value=''>Choose...</option>
                                         <option>01:00</option><option>01:30</option>
                                         <option>02:00</option><option>02:30</option>
@@ -75,7 +75,7 @@ export default function Checkout() {
                                     </Form.Select>
                                 </Form.Group>
                                 <Form.Group as={Col} className='mb-3'>
-                                    <Form.Select>
+                                    <Form.Select style={{ border: '2px solid black', borderRadius: '20px' }}>
                                         <option>AM</option>
                                         <option>PM</option>
                                     </Form.Select>

@@ -42,7 +42,7 @@ function Header() {
                         <Nav className='nav-bar-element'>
                             <Button className='nav-bar-element' variant='light'>Sell</Button>
                             <Button className='nav-bar-element' variant='light' onClick={handleShow}>Cart</Button>
-                            <Button className='nav-bar-element' variant='warning'>Account</Button>
+                            <a href='/login'><Button className='nav-bar-element' variant='warning'>Account</Button></a>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
