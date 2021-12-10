@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Card, Col, Row, Button, Image, Pagination, ListGroup, Alert, Modal } from 'react-bootstrap'
+import { Button, Pagination, ListGroup, Modal } from 'react-bootstrap'
 
 function AllUser() {
     let active = 1
@@ -37,7 +37,7 @@ function AllUser() {
                     </Button>
                 </Modal.Footer>
             </Modal>
-            <h6 className='ms-4 mt-4'>Showing 3 of 69</h6>
+            <h6 className='ms-4 mt-4'>Showing 6 of 69</h6>
             <ListGroup as='ol'>
                 {users.map((element, i) =>
                     <ListGroup.Item as='li' key={i} className="d-flex justify-content-between align-items-start">

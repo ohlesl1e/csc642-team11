@@ -22,7 +22,7 @@ function Home() {
                         <Row>
                             <Col>
                                 <div id="item-card1" style={{ marginTop: '40px' }}>
-                                    <Link to="/Result"><img src={notebook} width="400px" height="300px" /></Link>
+                                    <Link to="/Result"><img src={notebook} width="400px" height="300px" style={{ objectFit: 'cover' }} /></Link>
                                     <div style={{ display: 'flex', marginTop: '10px' }}>
                                         <h5 style={{ marginRight: '220px' }}>Notebook</h5>
                                         <Button variant='success' size="lg" style={{ fontWeight: 'bold' }}>Buy</Button></div>
@@ -31,7 +31,7 @@ function Home() {
                             </Col>
                             <Col>
                                 <div id="item-card2" style={{ marginTop: '40px' }}>
-                                    <Link to="/Result"><img src={laptop} width="400px" height="300px" /></Link>
+                                    <Link to="/Result"><img src={laptop} width="400px" height="300px" style={{ objectFit: 'cover' }} /></Link>
                                     <div style={{ display: 'flex', marginTop: '10px' }}>
                                         <h5 style={{ marginRight: '240px' }}>Laptop</h5>
                                         <Button variant='success' size="lg" style={{ fontWeight: 'bold' }}>Buy</Button></div>
@@ -40,7 +40,7 @@ function Home() {
                             </Col>
                             <Col>
                                 <div id="item-card3" style={{ marginTop: '40px' }}>
-                                    <Link to="/Result"><img src={lamp} width="400px" height="300px" /></Link>
+                                    <Link to="/Result"><img src={lamp} width="400px" height="300px" style={{ objectFit: 'cover' }} /></Link>
                                     <div style={{ display: 'flex', marginTop: '10px' }}>
                                         <h5 style={{ marginRight: '240px' }}>Lamp</h5>
                                         <Button variant='success' size="lg" style={{ fontWeight: 'bold' }}>Buy</Button></div>
@@ -51,7 +51,7 @@ function Home() {
                         <Row>
                             <Col>
                                 <div id="item-card4" style={{ marginTop: '40px' }}>
-                                    <Link to="/Result"><img src={chair} width="400px" height="300px" /></Link>
+                                    <Link to="/Result"><img src={chair} width="400px" height="300px" style={{ objectFit: 'cover' }} /></Link>
                                     <div style={{ display: 'flex', marginTop: '10px' }}>
                                         <h5 style={{ marginRight: '240px' }}>Chair</h5>
                                         <Button variant='success' size="lg" style={{ fontWeight: 'bold' }}>Buy</Button>
@@ -61,7 +61,7 @@ function Home() {
                             </Col>
                             <Col>
                                 <div id="item-card5" style={{ marginTop: '40px' }}>
-                                    <Link to="/Result"><img src={clock} width="400px" height="300px" /></Link>
+                                    <Link to="/Result"><img src={clock} width="400px" height="300px" style={{ objectFit: 'cover' }} /></Link>
                                     <div style={{ display: 'flex', marginTop: '10px' }}>
                                         <h5 style={{ marginRight: '240px' }}>Clock</h5>
                                         <Button variant='success' size="lg" style={{ fontWeight: 'bold' }}>Buy</Button></div>
@@ -70,7 +70,7 @@ function Home() {
                             </Col>
                             <Col>
                                 <div id="item-card6" style={{ marginTop: '40px' }}>
-                                    <Link to="/Result"><img src={textbook} width="400px" height="300px" /></Link>
+                                    <Link to="/Result"><img src={textbook} width="400px" height="300px" style={{ objectFit: 'cover' }} /></Link>
                                     <div style={{ display: 'flex', marginTop: '10px' }}>
                                         <h5 style={{ marginRight: '240px' }}>textbook</h5>
                                         <Button variant='success' size="lg" style={{ fontWeight: 'bold' }}>Buy</Button></div>

@@ -14,6 +14,7 @@ import Login from './pages/Login';
 import Checkout from './pages/Checkout';
 import Confirmation from './pages/Confirmation';
 import Admin from './pages/Admin';
+import Review from './pages/Review';
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
                 <Route path='/seller' element={<Seller />} />
                 <Route path='/listing' element={<Listing />} />
                 <Route path='/admindashboard' element={<Admin />} />
+                <Route path='/review' element={<Review />} />
             </Routes>
             <Footer />
         </div>
