@@ -34,7 +34,7 @@ function Header() {
                                             className="me-6"
                                             aria-label="Search"
                                         />
-                                        <Button variant='warning'>Search</Button>
+                                        <a href='/seller'><Button variant='warning'>Search</Button></a>
                                     </InputGroup>
                                 </Form>
                             </Nav.Item>
