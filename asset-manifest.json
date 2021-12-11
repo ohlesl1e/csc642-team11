@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/csc642-team11-gatorbuy/static/css/main.3630a130.chunk.css",
-    "main.js": "/csc642-team11-gatorbuy/static/js/main.0172a117.chunk.js",
-    "main.js.map": "/csc642-team11-gatorbuy/static/js/main.0172a117.chunk.js.map",
+    "main.js": "/csc642-team11-gatorbuy/static/js/main.dd32d419.chunk.js",
+    "main.js.map": "/csc642-team11-gatorbuy/static/js/main.dd32d419.chunk.js.map",
     "runtime-main.js": "/csc642-team11-gatorbuy/static/js/runtime-main.0b56ce7e.js",
     "runtime-main.js.map": "/csc642-team11-gatorbuy/static/js/runtime-main.0b56ce7e.js.map",
     "static/css/2.d8cb5cde.chunk.css": "/csc642-team11-gatorbuy/static/css/2.d8cb5cde.chunk.css",
@@ -27,6 +27,6 @@
     "static/css/2.d8cb5cde.chunk.css",
     "static/js/2.4ad23db8.chunk.js",
     "static/css/main.3630a130.chunk.css",
-    "static/js/main.0172a117.chunk.js"
+    "static/js/main.dd32d419.chunk.js"
   ]
 }
