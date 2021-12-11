@@ -40,7 +40,7 @@ function Header() {
                             </Nav.Item>
                         </Nav>
                         <Nav className='nav-bar-element'>
-                            <Button className='nav-bar-element' variant='light'>Sell</Button>
+                            <a href='/seller'><Button className='nav-bar-element' variant='light'>Sell</Button></a>
                             <Button className='nav-bar-element' variant='light' onClick={handleShow}>Cart</Button>
                             <a href='/login'><Button className='nav-bar-element' variant='warning'>Account</Button></a>
                         </Nav>
