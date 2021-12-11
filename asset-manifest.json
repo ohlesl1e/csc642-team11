@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/csc642-team11-gatorbuy/static/css/main.3630a130.chunk.css",
-    "main.js": "/csc642-team11-gatorbuy/static/js/main.38ec9636.chunk.js",
-    "main.js.map": "/csc642-team11-gatorbuy/static/js/main.38ec9636.chunk.js.map",
+    "main.js": "/csc642-team11-gatorbuy/static/js/main.b93cf3ca.chunk.js",
+    "main.js.map": "/csc642-team11-gatorbuy/static/js/main.b93cf3ca.chunk.js.map",
     "runtime-main.js": "/csc642-team11-gatorbuy/static/js/runtime-main.0b56ce7e.js",
     "runtime-main.js.map": "/csc642-team11-gatorbuy/static/js/runtime-main.0b56ce7e.js.map",
     "static/css/2.d8cb5cde.chunk.css": "/csc642-team11-gatorbuy/static/css/2.d8cb5cde.chunk.css",
-    "static/js/2.4ad23db8.chunk.js": "/csc642-team11-gatorbuy/static/js/2.4ad23db8.chunk.js",
-    "static/js/2.4ad23db8.chunk.js.map": "/csc642-team11-gatorbuy/static/js/2.4ad23db8.chunk.js.map",
+    "static/js/2.d9ead5a7.chunk.js": "/csc642-team11-gatorbuy/static/js/2.d9ead5a7.chunk.js",
+    "static/js/2.d9ead5a7.chunk.js.map": "/csc642-team11-gatorbuy/static/js/2.d9ead5a7.chunk.js.map",
     "static/js/3.a16de1d1.chunk.js": "/csc642-team11-gatorbuy/static/js/3.a16de1d1.chunk.js",
     "static/js/3.a16de1d1.chunk.js.map": "/csc642-team11-gatorbuy/static/js/3.a16de1d1.chunk.js.map",
     "index.html": "/csc642-team11-gatorbuy/index.html",
     "static/css/2.d8cb5cde.chunk.css.map": "/csc642-team11-gatorbuy/static/css/2.d8cb5cde.chunk.css.map",
     "static/css/main.3630a130.chunk.css.map": "/csc642-team11-gatorbuy/static/css/main.3630a130.chunk.css.map",
-    "static/js/2.4ad23db8.chunk.js.LICENSE.txt": "/csc642-team11-gatorbuy/static/js/2.4ad23db8.chunk.js.LICENSE.txt",
+    "static/js/2.d9ead5a7.chunk.js.LICENSE.txt": "/csc642-team11-gatorbuy/static/js/2.d9ead5a7.chunk.js.LICENSE.txt",
     "static/media/book.jpeg": "/csc642-team11-gatorbuy/static/media/book.561c9418.jpeg",
     "static/media/chair.jpeg": "/csc642-team11-gatorbuy/static/media/chair.d3c0738c.jpeg",
     "static/media/clock.jpeg": "/csc642-team11-gatorbuy/static/media/clock.bd0e7108.jpeg",
@@ -25,8 +25,8 @@
   "entrypoints": [
     "static/js/runtime-main.0b56ce7e.js",
     "static/css/2.d8cb5cde.chunk.css",
-    "static/js/2.4ad23db8.chunk.js",
+    "static/js/2.d9ead5a7.chunk.js",
     "static/css/main.3630a130.chunk.css",
-    "static/js/main.38ec9636.chunk.js"
+    "static/js/main.b93cf3ca.chunk.js"
   ]
 }
