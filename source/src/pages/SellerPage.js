@@ -23,7 +23,7 @@ function Seller() {
         <Container >
             <Row className='mt-4'>
                 <Col>
-                    <h2>Seller Page</h2>
+                    <h2>Selling Page</h2>
                 </Col>
                 <Col style={{ textAlign: 'right' }}>
                     <span className='me-2'>Create New Listing</span>
