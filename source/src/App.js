@@ -15,6 +15,7 @@ import Checkout from './pages/Checkout';
 import Confirmation from './pages/Confirmation';
 import Admin from './pages/Admin';
 import Review from './pages/Review';
+import Account from './pages/Account';
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
                 <Route path='/listing' element={<Listing />} />
                 <Route path='/admindashboard' element={<Admin />} />
                 <Route path='/review' element={<Review />} />
+                <Route path='/Account' element={<Account />} />
             </Routes>
             <Footer />
         </div>
