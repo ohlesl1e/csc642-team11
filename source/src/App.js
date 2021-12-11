@@ -23,19 +23,19 @@ function App() {
         <div className="App">
             <Header />
             <Routes>
-                <Route exact path='/csc642-team11-gatorbuy/' element={<Home />} />
-                <Route path='/csc642-team11-gatorbuy/Search' element={<Search />} />
-                <Route path='/csc642-team11-gatorbuy/Result' element={<Result />} />
-                <Route path='/csc642-team11-gatorbuy/Registration' element={<Registration />} />
-                <Route path='/csc642-team11-gatorbuy/Login' element={<Login role='user' />} />
-                <Route path='/csc642-team11-gatorbuy/checkout' element={<Checkout />} />
-                <Route path='/csc642-team11-gatorbuy/confirmation' element={<Confirmation />} />
-                <Route path='/csc642-team11-gatorbuy/notadmin' element={<Login role='admin' />} />
-                <Route path='/csc642-team11-gatorbuy/seller' element={<Seller />} />
-                <Route path='/csc642-team11-gatorbuy/listing' element={<Listing />} />
-                <Route path='/csc642-team11-gatorbuy/admindashboard' element={<Admin />} />
-                <Route path='/csc642-team11-gatorbuy/review' element={<Review />} />
-                <Route path='/csc642-team11-gatorbuy/Account' element={<Account />} />
+                <Route exact path='/' element={<Home />} />
+                <Route path='/search' element={<Search />} />
+                <Route path='/result' element={<Result />} />
+                <Route path='/registration' element={<Registration />} />
+                <Route path='/login' element={<Login role='user' />} />
+                <Route path='/checkout' element={<Checkout />} />
+                <Route path='/confirmation' element={<Confirmation />} />
+                <Route path='/notadmin' element={<Login role='admin' />} />
+                <Route path='/seller' element={<Seller />} />
+                <Route path='/listing' element={<Listing />} />
+                <Route path='/admindashboard' element={<Admin />} />
+                <Route path='/review' element={<Review />} />
+                <Route path='/account' element={<Account />} />
             </Routes>
             <Footer />
         </div>

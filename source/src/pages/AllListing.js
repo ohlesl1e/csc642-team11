@@ -32,7 +32,7 @@ function AllListing() {
                         <h6>Best offer (by price)</h6>
                     </Col>
                     <Col md={4} style={{ textAlign: 'right' }}>
-                        <Button style={{ width: '50%' }}>Review</Button>
+                        <Button style={{ width: '50%' }} href='/review'>Review</Button>
                         <p className='justify-content-right mt-5'>Approved (04/20/2021 04:20 PM)</p>
                     </Col>
                 </Row>
@@ -52,7 +52,7 @@ function AllListing() {
                         <h6>Proposed Price</h6>
                     </Col>
                     <Col md={4} style={{ textAlign: 'right' }}>
-                        <Button style={{ width: '50%' }}>Review</Button>
+                        <Button style={{ width: '50%' }} href='/review'>Review</Button>
                         <p className='justify-content-right mt-5'>Submitted (04/20/2021 04:20 PM)</p>
                     </Col>
                 </Row>
@@ -72,7 +72,7 @@ function AllListing() {
                         <h6>Best offer (by price)</h6>
                     </Col>
                     <Col md={4} style={{ textAlign: 'right' }}>
-                        <Button style={{ width: '50%' }}>Review</Button>
+                        <Button style={{ width: '50%' }} href='/review'>Review</Button>
                         <p className='justify-content-right mt-5'>Submitted (01/06/2021 01:15 PM)</p>
                     </Col>
                 </Row>

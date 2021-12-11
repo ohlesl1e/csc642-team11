@@ -22,28 +22,28 @@ function Home() {
                         <Row>
                             <Col>
                                 <div id="item-card1" style={{ marginTop: '40px' }}>
-                                    <Link to="/csc642-team11-gatorbuy/Result"><img src={notebook} width="400px" height="300px" style={{ objectFit: 'cover' }} /></Link>
+                                    <Link to="/result"><img src={notebook} width="400px" height="300px" style={{ objectFit: 'cover' }} /></Link>
                                     <div style={{ display: 'flex', marginTop: '10px' }}>
                                         <h5 style={{ marginRight: '220px' }}>Notebook</h5>
-                                        <Link to="/csc642-team11-gatorbuy/Checkout"><Button variant='success' size="lg" style={{ fontWeight: 'bold' }}>Buy</Button></Link></div>
+                                        <Link to="/checkout"><Button variant='success' size="lg" style={{ fontWeight: 'bold' }}>Buy</Button></Link></div>
                                     <h5 style={{ marginTop: '-20px' }}>$5</h5>
                                 </div>
                             </Col>
                             <Col>
                                 <div id="item-card2" style={{ marginTop: '40px' }}>
-                                    <Link to="/csc642-team11-gatorbuy/Result"><img src={laptop} width="400px" height="300px" style={{ objectFit: 'cover' }} /></Link>
+                                    <Link to="/result"><img src={laptop} width="400px" height="300px" style={{ objectFit: 'cover' }} /></Link>
                                     <div style={{ display: 'flex', marginTop: '10px' }}>
                                         <h5 style={{ marginRight: '240px' }}>Laptop</h5>
-                                        <Link to="/csc642-team11-gatorbuy/Checkout"><Button variant='success' size="lg" style={{ fontWeight: 'bold' }}>Buy</Button></Link></div>
+                                        <Link to="/checkout"><Button variant='success' size="lg" style={{ fontWeight: 'bold' }}>Buy</Button></Link></div>
                                     <h5 style={{ marginTop: '-20px' }}>$300</h5>
                                 </div>
                             </Col>
                             <Col>
                                 <div id="item-card3" style={{ marginTop: '40px' }}>
-                                    <Link to="/csc642-team11-gatorbuy/Result"><img src={lamp} width="400px" height="300px" style={{ objectFit: 'cover' }} /></Link>
+                                    <Link to="/result"><img src={lamp} width="400px" height="300px" style={{ objectFit: 'cover' }} /></Link>
                                     <div style={{ display: 'flex', marginTop: '10px' }}>
                                         <h5 style={{ marginRight: '240px' }}>Lamp</h5>
-                                        <Link to="/csc642-team11-gatorbuy/Checkout"><Button variant='success' size="lg" style={{ fontWeight: 'bold' }}>Buy</Button></Link></div>
+                                        <Link to="/checkout"><Button variant='success' size="lg" style={{ fontWeight: 'bold' }}>Buy</Button></Link></div>
                                     <h5 style={{ marginTop: '-20px' }}>$9</h5>
                                 </div>
                             </Col>
@@ -51,29 +51,29 @@ function Home() {
                         <Row>
                             <Col>
                                 <div id="item-card4" style={{ marginTop: '40px' }}>
-                                    <Link to="/csc642-team11-gatorbuy/Result"><img src={chair} width="400px" height="300px" style={{ objectFit: 'cover' }} /></Link>
+                                    <Link to="/result"><img src={chair} width="400px" height="300px" style={{ objectFit: 'cover' }} /></Link>
                                     <div style={{ display: 'flex', marginTop: '10px' }}>
                                         <h5 style={{ marginRight: '240px' }}>Chair</h5>
-                                        <Link to="/csc642-team11-gatorbuy/Checkout"><Button variant='success' size="lg" style={{ fontWeight: 'bold' }}>Buy</Button></Link>
+                                        <Link to="/checkout"><Button variant='success' size="lg" style={{ fontWeight: 'bold' }}>Buy</Button></Link>
                                     </div>
                                     <h5 style={{ marginTop: '-20px' }}>$7</h5>
                                 </div>
                             </Col>
                             <Col>
                                 <div id="item-card5" style={{ marginTop: '40px' }}>
-                                    <Link to="/csc642-team11-gatorbuy/Result"><img src={clock} width="400px" height="300px" style={{ objectFit: 'cover' }} /></Link>
+                                    <Link to="/result"><img src={clock} width="400px" height="300px" style={{ objectFit: 'cover' }} /></Link>
                                     <div style={{ display: 'flex', marginTop: '10px' }}>
                                         <h5 style={{ marginRight: '240px' }}>Clock</h5>
-                                        <Link to="/csc642-team11-gatorbuy/Checkout"><Button variant='success' size="lg" style={{ fontWeight: 'bold' }}>Buy</Button></Link></div>
+                                        <Link to="/checkout"><Button variant='success' size="lg" style={{ fontWeight: 'bold' }}>Buy</Button></Link></div>
                                     <h5 style={{ marginTop: '-20px' }}>$4</h5>
                                 </div>
                             </Col>
                             <Col>
                                 <div id="item-card6" style={{ marginTop: '40px' }}>
-                                    <Link to="/csc642-team11-gatorbuy/Result"><img src={textbook} width="400px" height="300px" style={{ objectFit: 'cover' }} /></Link>
+                                    <Link to="/result"><img src={textbook} width="400px" height="300px" style={{ objectFit: 'cover' }} /></Link>
                                     <div style={{ display: 'flex', marginTop: '10px' }}>
                                         <h5 style={{ marginRight: '240px' }}>textbook</h5>
-                                        <Link to="/csc642-team11-gatorbuy/Checkout"><Button variant='success' size="lg" style={{ fontWeight: 'bold' }}>Buy</Button></Link></div>
+                                        <Link to="/checkout"><Button variant='success' size="lg" style={{ fontWeight: 'bold' }}>Buy</Button></Link></div>
                                     <h5 style={{ marginTop: '-20px' }}>$15</h5>
                                 </div>
                             </Col>

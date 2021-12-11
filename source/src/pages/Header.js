@@ -13,7 +13,7 @@ function Header() {
         <div>
             <Navbar expand='lg' sticky='top' variant='dark' style={{ backgroundColor: '#683A7E' }}>
                 <Container>
-                    <Navbar.Brand className='nav-bar-element'><a href='/csc642-team11-gatorbuy/' style={{ color: 'white', textDecoration: 'none' }}>GatorBuy</a></Navbar.Brand>
+                    <Navbar.Brand className='nav-bar-element'><a href='/' style={{ color: 'white', textDecoration: 'none' }}>GatorBuy</a></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className='nav-fill w-100 nav-bar-element'>
@@ -34,15 +34,15 @@ function Header() {
                                             className="me-6"
                                             aria-label="Search"
                                         />
-                                        <a href='/csc642-team11-gatorbuy/Search'><Button variant='warning'>Search</Button></a>
+                                        <a href='/search'><Button variant='warning'>Search</Button></a>
                                     </InputGroup>
                                 </Form>
                             </Nav.Item>
                         </Nav>
                         <Nav className='nav-bar-element'>
-                            <Button href='/csc642-team11-gatorbuy/seller' className='nav-bar-element' variant='light'>Sell</Button>
+                            <Button href='/seller' className='nav-bar-element' variant='light'>Sell</Button>
                             <Button className='nav-bar-element' variant='light' onClick={handleShow}>Cart</Button>
-                            <Button href='/csc642-team11-gatorbuy/Login' className='nav-bar-element' variant='warning'>Account</Button>
+                            <Button href='/login' className='nav-bar-element' variant='warning'>Account</Button>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
@@ -52,7 +52,7 @@ function Header() {
                     <Offcanvas.Title>Cart</Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
-                    <a href='/csc642-team11-gatorbuy/checkout'><Button className='mb-3' style={{ width: '100%' }} variant='warning'>Checkout</Button></a>
+                    <a href='/checkout'><Button className='mb-3' style={{ width: '100%' }} variant='warning'>Checkout</Button></a>
                     <ListGroup as="ol" numbered>
                         <ListGroup.Item
                             as="li"

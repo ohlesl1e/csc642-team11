@@ -34,9 +34,9 @@ function Search() {
                             </Col>
                             <Col>
                                 <div style={{ marginLeft: '30px' }}>
-                                    <Link to="/csc642-team11-gatorbuy/Result"><Button variant='outline-primary' size="lg" style={{ fontWeight: 'bold', marginTop: '15px', width: '180px', height: '50px', borderRadius: '20px' }}>View More</Button></Link>
+                                    <Link to="/result"><Button variant='outline-primary' size="lg" style={{ fontWeight: 'bold', marginTop: '15px', width: '180px', height: '50px', borderRadius: '20px' }}>View More</Button></Link>
                                     <Button variant='success' size="lg" style={{ fontWeight: 'bold', marginTop: '15px', width: '180px', height: '50px', borderRadius: '20px' }}>Add to Cart</Button>
-                                    <a href='/csc642-team11-gatorbuy/checkout'><Button variant='warning' size="lg" style={{ fontWeight: 'bold', marginTop: '15px', width: '180px', height: '50px', borderRadius: '20px' }}>Buy Now</Button></a>
+                                    <a href='/checkout'><Button variant='warning' size="lg" style={{ fontWeight: 'bold', marginTop: '15px', width: '180px', height: '50px', borderRadius: '20px' }}>Buy Now</Button></a>
                                 </div>
                             </Col>
                         </Row>
@@ -57,9 +57,9 @@ function Search() {
                             </Col>
                             <Col>
                                 <div style={{ marginLeft: '30px' }}>
-                                    <Link to="/csc642-team11-gatorbuy/Result"><Button variant='outline-primary' size="lg" style={{ fontWeight: 'bold', marginTop: '15px', width: '180px', height: '50px', borderRadius: '20px' }}>View More</Button></Link>
+                                    <Link to="/result"><Button variant='outline-primary' size="lg" style={{ fontWeight: 'bold', marginTop: '15px', width: '180px', height: '50px', borderRadius: '20px' }}>View More</Button></Link>
                                     <Button variant='success' size="lg" style={{ fontWeight: 'bold', marginTop: '15px', width: '180px', height: '50px', borderRadius: '20px' }}>Add to Cart</Button>
-                                    <a href='/csc642-team11-gatorbuy/checkout'><Button variant='warning' size="lg" style={{ fontWeight: 'bold', marginTop: '15px', width: '180px', height: '50px', borderRadius: '20px' }}>Buy Now</Button></a>
+                                    <a href='/checkout'><Button variant='warning' size="lg" style={{ fontWeight: 'bold', marginTop: '15px', width: '180px', height: '50px', borderRadius: '20px' }}>Buy Now</Button></a>
                                 </div>
                             </Col>
                         </Row>

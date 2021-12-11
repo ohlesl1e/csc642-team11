@@ -30,7 +30,7 @@ function Result() {
                                 <div>
                                     <Col><Button variant='outline-primary' size="lg" style={{ fontWeight: 'bold',marginBottom:'40px',width:'350px',height:'60px',borderRadius: '20px' }}>Questions? Contact with seller!</Button></Col>
                                     <Col><Button variant='success' size="lg" style={{ fontWeight: 'bold',marginBottom:'20px',width:'350px',height:'60px',borderRadius: '20px'}}>Add to Cart</Button></Col>
-                                    <Col><a href='/csc642-team11-gatorbuy/checkout'><Button variant='warning' size="lg" style={{ fontWeight: 'bold',marginBottom:'20px',width:'350px',height:'60px',borderRadius: '20px' }}>Buy Now</Button></a></Col>
+                                    <Col><a href='/checkout'><Button variant='warning' size="lg" style={{ fontWeight: 'bold',marginBottom:'20px',width:'350px',height:'60px',borderRadius: '20px' }}>Buy Now</Button></a></Col>
                                 </div>
                             </Row>
                         </Col>
