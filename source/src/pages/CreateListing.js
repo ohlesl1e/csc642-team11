@@ -1,81 +1,59 @@
 import React from 'react'
-import { Container } from 'react-bootstrap'
+import { Container, Button, Form, InputGroup, Dropdown } from 'react-bootstrap'
 
 function Listing() {
     return (
         <div>
             <Container>
-                <form className="Form">
-                    <div>
-                        <h1 style={{ marginTop: '20px', marginBottom: '-30px' }}>Create Listing</h1>
-                        <button style={{ backgroundColor: 'transparent', borderColor: 'transparent', color: 'red', marginLeft: '90%', borderRadius: '10px' }}>Cancel</button>
-                    </div>
-
-
-                    <hr></hr>
-
-
-                    <div>
+                <h2 className='mt-3'>Create Listing</h2><hr />
+                <Form>
+                    <Form.Group className='mb-3'>
                         <h6>*Item Category and Name</h6>
-                    </div>
-                    <div>
-                        <select style={{ borderTopLeftRadius: '10px', borderBottomLeftRadius: '10px', height: '30px', borderWidth: '2px', borderColor: 'black', marginRight: '-3px' }}>
-                            <option>---- SELECT ----</option>
-                            <option>All</option>
-                            <option>Textbooks</option>
-                            <option>Clothing</option>
-                            <option>Electronics</option>
-                            <option>School Supplies</option>
-                            <option>Dorm</option>
-                        </select>
-                        <input style={{ borderTopRightRadius: '10px', borderBottomRightRadius: '10px', width: '30%' }}>
-                        </input>
-                    </div>
+                        <InputGroup>
+                            <Form.Select style={{ maxWidth: '20%' }}
+                                title='Category'
+                            >
+                                <option>---- SELECT ----</option>
+                                <option>All</option>
+                                <option>Textbooks</option>
+                                <option>Clothing</option>
+                                <option>Electronics</option>
+                                <option>School Supplies</option>
+                                <option>Dorm</option>
+                            </Form.Select>
+                            <Form.Control />
+                        </InputGroup>
+                    </Form.Group>
 
 
-                    <div>
-                        <h6 style={{ marginTop: '30px' }}>*Proposed Item Price</h6>
-                        <input style={{ borderRadius: '10px', width: '30%' }} placeholder='$'>
-                        </input>
-                    </div>
+                    <Form.Group className='mb-3'>
+                        <Form.Label>*Proposed Item Price</Form.Label>
+                        <InputGroup>
+                            <InputGroup.Text>$</InputGroup.Text>
+                            <Form.Control />
+                        </InputGroup>
+                    </Form.Group>
 
-                    <div>
-                        <h6 style={{ marginTop: '30px' }}>Item Description (optional)</h6>
-                        <input style={{ borderRadius: '10px', width: '90%', height: '80px' }}>
-                        </input>
-                    </div>
+                    <Form.Group className='mb-3'>
+                        <Form.Label>Item Description</Form.Label>
+                        <Form.Control as='textarea' />
+                    </Form.Group>
 
-                    <div>
-                        <h6 style={{ marginTop: '30px' }}>*Upload an image</h6>
-                        <input type='file'>
-                        </input>
-                    </div>
+                    <Form.Group controlId="formFileMultiple" className="mb-3">
+                        <Form.Label>Upload Images</Form.Label>
+                        <Form.Control type='file' multiple />
+                    </Form.Group>
 
-                    <hr></hr>
-
-                    <div>
-                        <Container>
-                            <h6 style={{
-                                marginTop: '20px',
-                                marginBottom: '-25px',
-                                fontSize: '12px',
-                                marginLeft: '58%'
-                            }}>*May take up to 24 hours for approval.</h6>
-
-                            <button style={{
-                                backgroundColor: '#3CA72A',
-                                color: 'white',
-                                marginLeft: '80%',
-                                width: '20%',
-                                textJustify: 'right',
-                                borderRadius: '10px',
-                                borderColor: 'transparent'
-                            }}>Submit For Review</button>
-                        </Container>
+                    <div style={{ textAlign: 'right' }}>
+                        <span style={{ color: 'grey' }} className='me-2'>
+                            *May take up to 24 hours for approval.
+                        </span>{' '}
+                        <Button variant='success' className='me-2'>Submit For Review</Button>
+                        <Button variant='danger'>Cancel</Button>
                     </div>
 
 
-                </form>
+                </Form>
 
             </Container>
         </div>
