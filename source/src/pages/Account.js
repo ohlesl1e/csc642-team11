@@ -11,10 +11,6 @@ function Account() {
                     <Col>
                         <h2>Account</h2>
                     </Col>
-                    <Col style={{ textAlign: 'right' }}>
-                        <span className='me-2'>Create New Listing</span>
-                        <Button href='/listing' variant='warning' style={{ paddingTop: '3px' }}>+</Button>
-                    </Col>
                 </Row>
                 <div>
                     <text style={{ color: 'gray', fontSize: '12px' }}>User ID: 1234567890</text>
