@@ -44,7 +44,7 @@ function Registration() {
                     </div>
                     <div style={{ textAlign: 'center', marginTop: '30px' }}>
                         <label>Already had an account?</label><br />
-                        <a href="/Login">Sign in here!</a>
+                        <a href="/csc642-team11-gatorbuy/Login">Sign in here!</a>
                     </div>
                 </form>
             </Container>

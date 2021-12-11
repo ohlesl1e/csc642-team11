@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container } from 'react-bootstrap'
+import { Container, Button } from 'react-bootstrap'
 import { Link } from "react-router-dom";
 
 function Login({ role }) {
@@ -25,10 +25,9 @@ function Login({ role }) {
                     </div>
                     {
                         role === 'admin' ?
-                            <Link
-                                to='/admindashboard'
-                                type="submit"
-                                className="btn btn-success btn-lg"
+                            <Button
+                                href='/csc642-team11-gatorbuy/admindashboard'
+                                variant='success'
                                 id="cancel-button"
                                 style={{
                                     width: '300px',
@@ -38,19 +37,19 @@ function Login({ role }) {
                                     paddingTop: '1rem'
                                 }}>
                                 Login
-                            </Link> :
-                            <button
-                                type="submit"
-                                className="btn btn-success btn-lg"
+                            </Button> :
+                            <Button
+                                href='/csc642-team11-gatorbuy/account'
+                                variant='success'
                                 id="cancel-button"
                                 style={{ width: '300px', height: '70px', marginTop: '40px', marginLeft: '150px' }}>
                                 Login
-                            </button>
+                            </Button>
                     }
                     <div style={{ textAlign: 'center', marginTop: '30px' }}>
                         <a href="http://www.sfsu.edu">Forget Password?</a><br />
                         <label style={{ marginTop: '10px', marginBottom: '10px' }}>OR</label><br />
-                        <a href="/Registration">Create your account</a>
+                        <a href="/csc642-team11-gatorbuy/Registration">Create your account</a>
                     </div>
                 </form>
 

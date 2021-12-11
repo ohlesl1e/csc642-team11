@@ -34,15 +34,15 @@ function Header() {
                                             className="me-6"
                                             aria-label="Search"
                                         />
-                                        <a href='/Search'><Button variant='warning'>Search</Button></a>
+                                        <a href='/csc642-team11-gatorbuy/Search'><Button variant='warning'>Search</Button></a>
                                     </InputGroup>
                                 </Form>
                             </Nav.Item>
                         </Nav>
                         <Nav className='nav-bar-element'>
-                            <Button href='/seller' className='nav-bar-element' variant='light'>Sell</Button>
+                            <Button href='/csc642-team11-gatorbuy/seller' className='nav-bar-element' variant='light'>Sell</Button>
                             <Button className='nav-bar-element' variant='light' onClick={handleShow}>Cart</Button>
-                            <Button href='/Login' className='nav-bar-element' variant='warning'>Account</Button>
+                            <Button href='/csc642-team11-gatorbuy/Login' className='nav-bar-element' variant='warning'>Account</Button>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
@@ -52,7 +52,7 @@ function Header() {
                     <Offcanvas.Title>Cart</Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
-                    <a href='/checkout'><Button className='mb-3' style={{ width: '100%' }} variant='warning'>Checkout</Button></a>
+                    <a href='/csc642-team11-gatorbuy/checkout'><Button className='mb-3' style={{ width: '100%' }} variant='warning'>Checkout</Button></a>
                     <ListGroup as="ol" numbered>
                         <ListGroup.Item
                             as="li"

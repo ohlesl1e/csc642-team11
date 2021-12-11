@@ -39,9 +39,9 @@ function Review() {
 
                     <Form.Group className='mb-3'>
                         <Row>
-                            <Col><a href='/admindashboard'><Button variant='danger' style={{ width: '100%' }}>Deny</Button></a></Col>
-                            <Col><a href='/admindashboard'><Button variant='success' style={{ width: '100%' }}>Approve</Button></a></Col>
-                            <Col><a href='/admindashboard'><Button style={{ width: '100%' }}>Back</Button></a></Col>
+                            <Col><a href='/csc642-team11-gatorbuy/admindashboard'><Button variant='danger' style={{ width: '100%' }}>Deny</Button></a></Col>
+                            <Col><a href='/csc642-team11-gatorbuy/admindashboard'><Button variant='success' style={{ width: '100%' }}>Approve</Button></a></Col>
+                            <Col><a href='/csc642-team11-gatorbuy/admindashboard'><Button style={{ width: '100%' }}>Back</Button></a></Col>
                         </Row>
                     </Form.Group>
                 </Form>
