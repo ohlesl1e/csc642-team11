@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Tabs, Tab } from 'react-bootstrap'
+import { Container, Tabs, Tab, Row, Col, Button } from 'react-bootstrap'
 import { useState } from 'react';
 
 import notebook from '../images/notebook.jpeg'
@@ -7,6 +7,7 @@ import textbook from '../images/book.jpeg'
 import chair from '../images/chair.jpeg'
 import clock from '../images/clock.jpeg'
 import laptop from '../images/laptop.jpeg'
+import Messages from './Messages';
 
 
 function Seller() {
@@ -19,11 +20,15 @@ function Seller() {
 
     return (
         <Container >
-            <div>
-                <h1 style={{ marginTop: '20px', marginBottom: '-30px' }}>My Page</h1>
-                <text style={{ marginLeft: '80%', marginRight: '15px' }}><b>Create New Listing</b></text>
-                <button style={{ fontSize: '20px', borderRadius: '100%', backgroundColor: 'gold', width: '40px', height: '40px' }}>+</button>
-            </div>
+            <Row className='mt-4'>
+                <Col>
+                    <h2>Seller Page</h2>
+                </Col>
+                <Col style={{ textAlign: 'right' }}>
+                    <span className='me-2'>Create New Listing</span>
+                    <Button href='/listing' variant='warning'>+</Button>
+                </Col>
+            </Row>
 
             <div>
                 <text style={{ color: 'gray', fontSize: '12px' }}>User ID: 1234567890</text>
@@ -35,39 +40,7 @@ function Seller() {
                 style={{ marginTop: '20px', marginBottom: '20px' }}
             >
                 <Tab eventKey="messages" title="Buyer Messages">
-                    <button style={{ width: '100%', height: '50px', borderRadius: '10px', backgroundColor: 'white', textAlign: 'left', marginBottom: '5px' }}>
-                        <b>From: User</b>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; { /* wow coding */}
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-
-                        how do i use this
-
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-                        11/11 11:11 AM
-                    </button>
-                    <button style={{ width: '100%', height: '50px', borderRadius: '10px', backgroundColor: 'white', textAlign: 'left', marginBottom: '5px' }}>
-                        <b>From: User</b>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-                        do you take $SHIB for payment
-
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        12/34 56:78 AM
-                    </button>
-                    <div style={{ textAlign: 'right', marginTop: '20%' }}>
-                        <h6>1-2 of 2 shown</h6>
-                    </div>
-
+                    <Messages />
                 </Tab>
                 <Tab eventKey="selling" title="Selling" >
                     <button style={{ width: '90%', height: '150px', borderRadius: '10px', backgroundColor: 'white', textAlign: 'left', marginBottom: '5px' }}>

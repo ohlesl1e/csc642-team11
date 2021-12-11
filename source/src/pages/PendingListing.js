@@ -17,7 +17,7 @@ function PendingListing() {
     return (
         <div style={{ minHeight: '50vh' }}>
             <h6 className='ms-4 mt-4'>Showing 3 of 69</h6>
-            <Card className='mb-3' style={{ padding: '1rem', boxShadow: '3px 6px 5px rgba(0,0,0,.3)' }}>
+            <Card className='mb-2 listing-item'>
                 <Row>
                     <Col md={3}>
                         <div style={{ width: '100%', height: '8rem' }}>
@@ -37,7 +37,7 @@ function PendingListing() {
                     </Col>
                 </Row>
             </Card>
-            <Card className='mb-3' style={{ padding: '1rem', boxShadow: '3px 6px 5px rgba(0,0,0,.3)' }}>
+            <Card className='mb-2 listing-item'>
                 <Row>
                     <Col md={3}>
                         <div style={{ width: '100%', height: '8rem' }}>
@@ -57,7 +57,7 @@ function PendingListing() {
                     </Col>
                 </Row>
             </Card>
-            <Card className='mb-3' style={{ padding: '1rem', boxShadow: '3px 6px 5px rgba(0,0,0,.3)' }}>
+            <Card className='mb-2 listing-item'>
                 <Row>
                     <Col md={3}>
                         <div style={{ width: '100%', height: '8rem' }}>
