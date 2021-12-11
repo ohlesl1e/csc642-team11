@@ -34,7 +34,7 @@ function Header() {
                                             className="me-6"
                                             aria-label="Search"
                                         />
-                                        <a href='/seller'><Button variant='warning'>Search</Button></a>
+                                        <a href='/Search'><Button variant='warning'>Search</Button></a>
                                     </InputGroup>
                                 </Form>
                             </Nav.Item>
@@ -42,7 +42,7 @@ function Header() {
                         <Nav className='nav-bar-element'>
                             <a href='/seller'><Button className='nav-bar-element' variant='light'>Sell</Button></a>
                             <Button className='nav-bar-element' variant='light' onClick={handleShow}>Cart</Button>
-                            <a href='/login'><Button className='nav-bar-element' variant='warning'>Account</Button></a>
+                            <a href='/Login'><Button className='nav-bar-element' variant='warning'>Account</Button></a>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

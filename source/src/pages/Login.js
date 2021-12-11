@@ -12,7 +12,7 @@ function Login({ role }) {
                         : <h3 className="text-center" style={{ fontWeight: 'bold', marginTop: '30px', color: 'purple' }}>Login to GatorBuy</h3>
                 }
 
-                <form action="/" style={{ width: '600px', margin: 'auto', fontWeight: 'bold', fontSize: '20px' }}>
+                <form action="/Account" style={{ width: '600px', margin: 'auto', fontWeight: 'bold', fontSize: '20px' }}>
                     <div className="form-group">
                         <label for="email" style={{ marginTop: '20px', marginBottom: '10px' }}>*SF State Email</label>
                         <input type="email" name="email" id="emial" className="form-control" placeholder="your@mail.sfsu.edu OR your@sfsu.edu" required

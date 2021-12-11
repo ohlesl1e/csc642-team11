@@ -35,7 +35,7 @@ function App() {
                 <Route path='/listing' element={<Listing />} />
                 <Route path='/admindashboard' element={<Admin />} />
                 <Route path='/review' element={<Review />} />
-                <Route path='/account' element={<Account />} />
+                <Route path='/Account' element={<Account />} />
             </Routes>
             <Footer />
         </div>

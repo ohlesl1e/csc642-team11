@@ -36,7 +36,7 @@ function Search() {
                                 <div style={{ marginLeft: '30px' }}>
                                     <Link to="/Result"><Button variant='outline-primary' size="lg" style={{ fontWeight: 'bold', marginTop: '15px', width: '180px', height: '50px', borderRadius: '20px' }}>View More</Button></Link>
                                     <Button variant='success' size="lg" style={{ fontWeight: 'bold', marginTop: '15px', width: '180px', height: '50px', borderRadius: '20px' }}>Add to Cart</Button>
-                                    <Button variant='warning' size="lg" style={{ fontWeight: 'bold', marginTop: '15px', width: '180px', height: '50px', borderRadius: '20px' }}>Buy Now</Button>
+                                    <a href='/checkout'><Button variant='warning' size="lg" style={{ fontWeight: 'bold', marginTop: '15px', width: '180px', height: '50px', borderRadius: '20px' }}>Buy Now</Button></a>
                                 </div>
                             </Col>
                         </Row>
@@ -59,7 +59,7 @@ function Search() {
                                 <div style={{ marginLeft: '30px' }}>
                                     <Link to="/Result"><Button variant='outline-primary' size="lg" style={{ fontWeight: 'bold', marginTop: '15px', width: '180px', height: '50px', borderRadius: '20px' }}>View More</Button></Link>
                                     <Button variant='success' size="lg" style={{ fontWeight: 'bold', marginTop: '15px', width: '180px', height: '50px', borderRadius: '20px' }}>Add to Cart</Button>
-                                    <Button variant='warning' size="lg" style={{ fontWeight: 'bold', marginTop: '15px', width: '180px', height: '50px', borderRadius: '20px' }}>Buy Now</Button>
+                                    <a href='/checkout'><Button variant='warning' size="lg" style={{ fontWeight: 'bold', marginTop: '15px', width: '180px', height: '50px', borderRadius: '20px' }}>Buy Now</Button></a>
                                 </div>
                             </Col>
                         </Row>
