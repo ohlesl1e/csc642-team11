@@ -59,18 +59,6 @@ function Header() {
                             className="d-flex justify-content-between align-items-start"
                         >
                             <div className="ms-2 me-auto">
-                                <div className="fw-bold">Textbook</div>
-                                Sophia
-                            </div>
-                            <Badge variant="primary" pill>
-                                $20
-                            </Badge>
-                        </ListGroup.Item>
-                        <ListGroup.Item
-                            as="li"
-                            className="d-flex justify-content-between align-items-start"
-                        >
-                            <div className="ms-2 me-auto">
                                 <div className="fw-bold">Macbook Air</div>
                                 John
                             </div>

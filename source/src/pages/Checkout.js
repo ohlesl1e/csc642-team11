@@ -96,19 +96,13 @@ export default function Checkout() {
                                 <Table>
                                     <tbody>
                                         <tr>
-                                            <td>Textbook</td>
-                                            <td>Sophia</td>
-                                            <td>$20</td>
-                                        </tr>
-
-                                        <tr>
                                             <td>Macbook Air</td>
                                             <td>John</td>
                                             <td>$300</td>
                                         </tr>
                                         <tr>
                                             <td colSpan='2'><b>Total</b></td>
-                                            <td>$320</td>
+                                            <td>$300</td>
                                         </tr>
                                     </tbody>
                                 </Table>
