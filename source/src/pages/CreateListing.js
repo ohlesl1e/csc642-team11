@@ -48,8 +48,8 @@ function Listing() {
                         <span style={{ color: 'grey' }} className='me-2'>
                             *May take up to 24 hours for approval.
                         </span>{' '}
-                        <Button href='/csc642-team11-gatorbuy/seller' variant='success' className='me-2'>Submit For Review</Button>
-                        <Button href='/csc642-team11-gatorbuy/seller' variant='danger'>Cancel</Button>
+                        <Button href='/seller' variant='success' className='me-2'>Submit For Review</Button>
+                        <Button href='/seller' variant='danger'>Cancel</Button>
                     </div>
 
 

@@ -31,7 +31,7 @@ function Info() {
                 </Form.Group>
 
                 <div style={{ textAlign: 'right' }}>
-                    <Button href='/csc642-team11-gatorbuy/account' variant='success'>Save changes</Button>
+                    <Button href='/account' variant='success'>Save changes</Button>
                 </div>
             </Form>
         </div>

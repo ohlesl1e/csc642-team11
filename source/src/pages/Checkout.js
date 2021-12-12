@@ -85,7 +85,7 @@ export default function Checkout() {
                                     <Form.Check label='*I have read and agree to the terms and conditions' />
                                 </Form.Group>
 
-                                <a href='/csc642-team11-gatorbuy/confirmation'><Button style={{ width: '100%' }} variant='outline-success'>Checkout</Button></a>
+                                <a href='/confirmation'><Button style={{ width: '100%' }} variant='outline-success'>Checkout</Button></a>
                             </Row>
                         </Form>
                     </Col>
