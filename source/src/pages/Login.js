@@ -1,8 +1,10 @@
 import React from 'react'
 import { Container, Button } from 'react-bootstrap'
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 
 function Login({ role }) {
+    const [searchParams] = useSearchParams()
+
     return (
         <div>
             <Container>
@@ -24,9 +26,9 @@ function Login({ role }) {
                             maxLength="16" style={{ border: '2px solid black', borderRadius: '20px' }} />
                     </div>
                     {
-                        role === 'admin' ?
+                        searchParams.get('from') === 'checkout' ?
                             <Button
-                                href='/admindashboard'
+                                href='/checkout'
                                 variant='success'
                                 id="cancel-button"
                                 style={{
@@ -38,13 +40,33 @@ function Login({ role }) {
                                 }}>
                                 Login
                             </Button> :
-                            <Button
-                                href='/account'
-                                variant='success'
-                                id="cancel-button"
-                                style={{ width: '300px', height: '70px', marginTop: '40px', marginLeft: '150px' }}>
-                                Login
-                            </Button>
+                            role === 'admin' ?
+                                <Button
+                                    href='/admindashboard'
+                                    variant='success'
+                                    id="cancel-button"
+                                    style={{
+                                        width: '300px',
+                                        height: '70px',
+                                        marginTop: '40px',
+                                        marginLeft: '150px',
+                                        paddingTop: '1rem'
+                                    }}>
+                                    Login
+                                </Button> :
+                                <Button
+                                    href='/account'
+                                    variant='success'
+                                    id="cancel-button"
+                                    style={{
+                                        width: '300px',
+                                        height: '70px',
+                                        marginTop: '40px',
+                                        marginLeft: '150px',
+                                        paddingTop: '1rem'
+                                    }}>
+                                    Login
+                                </Button>
                     }
                     <div style={{ textAlign: 'center', marginTop: '30px' }}>
                         <a href="http://www.sfsu.edu">Forget Password?</a><br />

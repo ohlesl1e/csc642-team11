@@ -9,7 +9,7 @@ export default function Checkout() {
                     <Col>
                         <h3>Checkout</h3>
                         <Row>
-                            <Col md={5}><a href='/login'><Button variant='success' style={{ width: '100%' }}>Login</Button></a></Col>
+                            <Col md={5}><Button href='/login?from=checkout' variant='success' style={{ width: '100%' }}>Login</Button></Col>
                             <Col md={2} ><h4 style={{ textAlign: "center" }}>or</h4></Col>
                             <Col md={5}><a href='/registration'><Button variant='warning' style={{ width: '100%' }}>Register</Button></a></Col>
                         </Row>

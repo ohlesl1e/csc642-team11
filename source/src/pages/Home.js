@@ -15,7 +15,7 @@ function Home() {
                 <div id="home-body">
                     <div id="home-title">
                         <h1 style={{ fontWeight: 'bold', color: '#5d2975', marginTop: '40px' }}>Buy and sell your items on campus!</h1>
-                        <h1 style={{ fontWeight: 'bold', color: '#5d2975' }}>We help ypu save money!</h1>
+                        <h1 style={{ fontWeight: 'bold', color: '#5d2975' }}>We help you save money!</h1>
                     </div>
                     <div id="item-cards">
                         <h4 style={{ fontWeight: 'bold', marginTop: '40px', marginBottom: '-30px' }}>New Posted items : </h4>

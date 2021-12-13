@@ -7,7 +7,7 @@ function SellingList() {
         { title: 'Free Time', price: 'Proposed Price - $12', status: 'Denied', time: '12/14 08:41 AM', image: 'clock.jpeg' },
     ]
     return (
-        <div style={{ minHeight: '50vh' }}>
+        <div style={{ minHeight: '60vh' }}>
             {listings.map((element, key) =>
                 <Card className='mb-2 listing-item'>
                     <Row>
