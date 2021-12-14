@@ -1,13 +1,15 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
 import { Link } from "react-router-dom";
+import { useWindowSize } from '../resize';
 
 function Registration() {
+    const height = useWindowSize()
     return (
-        <div>
+        <div style={{ minHeight: (height - 240.2) }} className='mt-4'>
             <Container>
-                <h3 class="text-center" style={{ fontWeight: 'bold', marginTop: '30px', color: 'purple' }}>Create a New Account</h3>
-                <h4 style={{ color: 'blue', marginLeft: '1000px' }}>* are mandatory</h4>
+                <h3 class="text-center" style={{ fontWeight: 'bold', color: 'purple' }}>Create a New Account</h3>
+                <h4 style={{ color: 'blue', textAlign: 'right' }}>* are mandatory</h4>
                 <form action="/login" style={{ width: '600px', margin: 'auto', fontWeight: 'bold', fontSize: '20px' }}>
                     <div class="form-group">
                         <label for="firstname" style={{ marginTop: '20px', marginBottom: '10px' }}>*Firstname</label>
@@ -36,7 +38,7 @@ function Registration() {
                     </div>
                     <div class="form-check" id="agreeterms" style={{ marginTop: '20px', marginBottom: '40px' }}>
                         <input type="checkbox" class="form-check-input" id="terms" required />
-                        <label class="form-check-label" for="terms">* I have read and agree to the <a href="https://youtu.be/dQw4w9WgXcQ">terms and conditions</a></label>
+                        <label class="form-check-label" for="terms">* I have read and agree to the <a href="https://youtu.be/dQw4w9WgXcQ" target='_blank'>terms and conditions</a></label>
                     </div>
                     <div>
                         <Link to="/"><button class="btn btn-danger btn-lg" id="cancel-button" style={{ marginRight: '20px', width: '275px' }}>Cancel</button></Link>

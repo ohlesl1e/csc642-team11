@@ -1,11 +1,13 @@
 import React from 'react'
 import { Container, Tabs, Tab, Button, Row, Col } from 'react-bootstrap'
+import { useWindowSize } from '../resize'
 import History from './History'
 import Info from './Info'
 
 function Account() {
+    const height = useWindowSize()
     return (
-        <div>
+        <div style={{ minHeight: (height - 240.2) }}>
             <Container>
                 <Row className='mt-4'>
                     <Col>

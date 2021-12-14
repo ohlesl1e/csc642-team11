@@ -1,9 +1,11 @@
 import React from 'react'
 import { Col, Container, Form, InputGroup, Row, Button } from 'react-bootstrap'
+import { useWindowSize } from '../resize'
 
 function Review() {
+    const height = useWindowSize()
     return (
-        <div>
+        <div style={{ minHeight: (height - 240.2) }}>
             <Container>
                 <h2 className='mt-4'>Review Listing</h2><hr />
                 <Form>
@@ -27,9 +29,9 @@ function Review() {
 
                     <Form.Label>Images</Form.Label>
                     <Row>
-                        <Col md={4}><img width='100%' height='300em' src={require('../images/chair.jpeg').default} style={{ objectFit: 'cover' }} /></Col>
-                        <Col md={4}><img width='100%' height='300em' src={require('../images/placeholder.png').default} style={{ objectFit: 'cover' }} /></Col>
-                        <Col md={4}><img width='100%' height='300em' src={require('../images/placeholder.png').default} style={{ objectFit: 'cover' }} /></Col>
+                        <Col md={4} className='mb-3'><img width='100%' height='300em' src={require('../images/chair.jpeg').default} style={{ objectFit: 'cover' }} /></Col>
+                        <Col md={4} className='mb-3'><img width='100%' height='300em' src={require('../images/placeholder.png').default} style={{ objectFit: 'cover' }} /></Col>
+                        <Col md={4} className='mb-3'><img width='100%' height='300em' src={require('../images/placeholder.png').default} style={{ objectFit: 'cover' }} /></Col>
                     </Row><hr />
 
                     <Form.Group className='mb-3'>

@@ -3,12 +3,14 @@ import { Container, Row, Col, Button, Form } from 'react-bootstrap'
 import { Link } from "react-router-dom";
 import laptop1 from '../images/laptop.jpeg'
 import laptop2 from '../images/laptop2.jpeg'
+import { useWindowSize } from '../resize';
 
 function Search() {
+    const height = useWindowSize()
     return (
-        <div>
-            <Container>
-                <h4 style={{ fontWeight: 'bold', marginTop: '50px' }}>Showing 1 to 2 out of 2 items : </h4>
+        <div style={{ minHeight: (height - 240.2) }}>
+            <Container className='mt-4'>
+                <h4 style={{ fontWeight: 'bold' }}>Showing 1 to 2 out of 2 items : </h4>
                 <div className='d-flex justify-content-end mb-3'>
                     <Form style={{ maxWidth: '30%' }}>
                         <Form.Select defaultValue='All' style={{ fontWeight: 'bold', fontSize: '20px', color: '#224466', border: '2px solid blue' }}>

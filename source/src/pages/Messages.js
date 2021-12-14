@@ -7,7 +7,7 @@ function Messages() {
         { user: 'Bob', text: 'do you take bitcoin?', time: '12/32 4:20 PM' },
     ]
     return (
-        <div style={{ minHeight: '60vh' }}>
+        <div>
             {messages.map((element, key) =>
                 <Card className='mb-2 listing-item'>
                     <Row>

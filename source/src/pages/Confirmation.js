@@ -1,9 +1,11 @@
 import React from 'react'
 import { Container, Row, Col, Button } from 'react-bootstrap'
+import { useWindowSize } from '../resize'
 
 export default function Confirmation() {
+    const height = useWindowSize()
     return (
-        <div style={{ marginTop: '10rem', height: '40vh', textAlign: 'center' }}>
+        <div style={{ marginTop: '160px', height: (height - 376.2), textAlign: 'center' }}>
             <Container>
                 <h1><b>Thank you for your purchase</b></h1>
                 <h4 className='mb-3'>Please consider registering for faster checkout next time</h4>

@@ -1,12 +1,14 @@
 import React from 'react'
 import { Container, Button } from 'react-bootstrap'
 import { Link, useSearchParams } from "react-router-dom";
+import { useWindowSize } from '../resize';
 
 function Login({ role }) {
     const [searchParams] = useSearchParams()
+    const height = useWindowSize()
 
     return (
-        <div>
+        <div style={{ minHeight: (height - 246.2) }}>
             <Container>
                 {
                     role === 'admin' ?
