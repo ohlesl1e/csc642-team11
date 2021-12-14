@@ -8,12 +8,12 @@ function Login({ role }) {
     const height = useWindowSize()
 
     return (
-        <div style={{ minHeight: (height - 246.2) }}>
+        <div style={{ minHeight: (height - 240.2) }} className='mt-4'>
             <Container>
                 {
                     role === 'admin' ?
-                        <h3 className="text-center" style={{ fontWeight: 'bold', marginTop: '30px', color: 'purple' }}>Admin Login</h3>
-                        : <h3 className="text-center" style={{ fontWeight: 'bold', marginTop: '30px', color: 'purple' }}>Login to GatorBuy</h3>
+                        <h3 className="text-center" style={{ fontWeight: 'bold', color: 'purple' }}>Admin Login</h3>
+                        : <h3 className="text-center" style={{ fontWeight: 'bold', color: 'purple' }}>Login to GatorBuy</h3>
                 }
 
                 <form action="/account" style={{ width: '600px', margin: 'auto', fontWeight: 'bold', fontSize: '20px' }}>
