@@ -9,8 +9,8 @@ function Search() {
         <div>
             <Container>
                 <h4 style={{ fontWeight: 'bold', marginTop: '50px' }}>Showing 1 to 2 out of 2 items : </h4>
-                <div style={{ marginLeft: '1080px', marginBottom: '20px' }}>
-                    <Form>
+                <div className='d-flex justify-content-end mb-3'>
+                    <Form style={{ maxWidth: '30%' }}>
                         <Form.Select defaultValue='All' style={{ fontWeight: 'bold', fontSize: '20px', color: '#224466', border: '2px solid blue' }}>
                             <option>Price: low to high</option>
                             <option>Price: high to low</option>
