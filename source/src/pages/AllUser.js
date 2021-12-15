@@ -25,7 +25,7 @@ function AllUser() {
     const [show, setShow] = useState(false)
     const [index, setIndex] = useState(0)
     return (
-        <div style={{ minHeight: '65vh' }}>
+        <div>
             <Modal show={show}>
                 <Modal.Header>Are you sure that you want to ban {users[index].name}?</Modal.Header>
                 <Modal.Footer>

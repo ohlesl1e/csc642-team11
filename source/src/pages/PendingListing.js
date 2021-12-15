@@ -15,7 +15,7 @@ function PendingListing() {
         <Pagination.Last />
     ]
     return (
-        <div style={{ minHeight: '50vh' }}>
+        <div>
             <h6 className='ms-4 mt-4'>Showing 3 of 69</h6>
             <Card className='mb-2 listing-item'>
                 <Row>

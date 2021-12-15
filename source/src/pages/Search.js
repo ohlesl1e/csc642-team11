@@ -1,13 +1,15 @@
 import React, { useState } from 'react'
-import { Container, Row, Col, Button, Form,ToastContainer,Toast } from 'react-bootstrap'
+import { Container, Row, Col, Button, Form, ToastContainer, Toast } from 'react-bootstrap'
 import { Link } from "react-router-dom";
 import laptop1 from '../images/laptop.jpeg'
 import laptop2 from '../images/laptop2.jpeg'
+import { useWindowSize } from '../resize';
 
 function Search() {
+    const height = useWindowSize()
     const [show, setShow] = useState(false)
     return (
-        <div>
+        <div style={{ minHeight: (height - 240.2) }}>
             <ToastContainer className='mt-4 p-5' position='top-end'>
                 <Toast onClose={() => setShow(false)} show={show} delay={3000} autohide>
                     <Toast.Header closeButton={false}>
@@ -21,8 +23,8 @@ function Search() {
                     <Toast.Body>Added to cart</Toast.Body>
                 </Toast>
             </ToastContainer>
-            <Container>
-                <h4 style={{ fontWeight: 'bold', marginTop: '50px' }}>Showing 1 to 2 out of 2 items : </h4>
+            <Container className='mt-4'>
+                <h4 style={{ fontWeight: 'bold' }}>Showing 1 to 2 out of 2 items : </h4>
                 <div className='d-flex justify-content-end mb-3'>
                     <Form style={{ maxWidth: '30%' }}>
                         <Form.Select defaultValue='All' style={{ fontWeight: 'bold', fontSize: '20px', color: '#224466', border: '2px solid blue' }}>

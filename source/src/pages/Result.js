@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
 import { Container, Row, Col, Button, Toast, ToastContainer } from 'react-bootstrap'
 import laptop from '../images/laptop.jpeg'
+import { useWindowSize } from '../resize'
 
 function Result() {
     const [show, setShow] = useState(false)
+    const height = useWindowSize()
     return (
-        <div>
+        <div style={{ minHeight: (height - 240.2) }} className='mt-4'>
             <ToastContainer className='mt-4 p-5' position='top-end'>
                 <Toast onClose={() => setShow(false)} show={show} delay={3000} autohide>
                     <Toast.Header closeButton={false}>
@@ -20,7 +22,7 @@ function Result() {
                 </Toast>
             </ToastContainer>
             <Container>
-                <h2 style={{ marginTop: '40px', marginLeft: '300px', marginBottom: '20px' }}>Macbook Air 13</h2>
+                <h2 style={{ marginLeft: '300px', marginBottom: '20px' }}>Macbook Air 13</h2>
                 <div>
                     <Row>
                         <Col style={{ marginLeft: '100px' }}>
@@ -45,13 +47,13 @@ function Result() {
                                     <Col><Button variant='outline-primary' size="lg" style={{ fontWeight: 'bold', marginBottom: '40px', width: '350px', height: '60px', borderRadius: '20px' }}>Questions? Contact with seller!</Button></Col>
                                     <Col><Button variant='success' size="lg" style={{ fontWeight: 'bold', marginBottom: '20px', width: '350px', height: '60px', borderRadius: '20px' }} onClick={() => setShow(true)}>Add to Cart</Button></Col>
                                     <Col><a href='/checkout'><Button variant='warning' size="lg" style={{ fontWeight: 'bold', marginBottom: '20px', width: '350px', height: '60px', borderRadius: '20px' }}>Buy Now</Button></a></Col>
-                                </div>
-                            </Row>
-                        </Col>
-                    </Row>
-                </div>
-            </Container>
-        </div>
+                                </div >
+                            </Row >
+                        </Col >
+                    </Row >
+                </div >
+            </Container >
+        </div >
     )
 }
 

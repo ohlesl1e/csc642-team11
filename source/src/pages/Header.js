@@ -10,7 +10,7 @@ function Header() {
     const handleHide = () => setShow(false)
 
     return (
-        <div>
+        <div style={{ height: '69px' }}>
             <Navbar expand='lg' sticky='top' variant='dark' style={{ backgroundColor: '#683A7E' }}>
                 <Container>
                     <Navbar.Brand className='nav-bar-element'><a href='/' style={{ color: 'white', textDecoration: 'none' }}>GatorBuy</a></Navbar.Brand>

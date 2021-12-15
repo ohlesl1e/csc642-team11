@@ -1,9 +1,11 @@
 import React from 'react'
 import { Col, Container, Row, Button, Form, Card, Table } from 'react-bootstrap'
+import { useWindowSize } from '../resize'
 
 export default function Checkout() {
+    const height = useWindowSize()
     return (
-        <div style={{ marginTop: '1rem' }}>
+        <div style={{ minHeight: (height - 240.2) }} className='mt-4'>
             <Container>
                 <Row>
                     <Col>

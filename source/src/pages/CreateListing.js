@@ -1,11 +1,13 @@
 import React from 'react'
 import { Container, Button, Form, InputGroup, Dropdown } from 'react-bootstrap'
+import { useWindowSize } from '../resize'
 
 function Listing() {
+    const height = useWindowSize()
     return (
-        <div>
+        <div style={{ minHeight: (height - 240.2) }}>
             <Container>
-                <h2 className='mt-3'>Create Listing</h2><hr />
+                <h2 className='mt-4'>Create Listing</h2><hr />
                 <Form>
                     <Form.Group className='mb-3'>
                         <h6>*Item Category and Name</h6>
