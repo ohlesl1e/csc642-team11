@@ -1,12 +1,26 @@
-import React from 'react'
-import { Container, Row, Col, Button, Form } from 'react-bootstrap'
+import React, { useState } from 'react'
+import { Container, Row, Col, Button, Form,ToastContainer,Toast } from 'react-bootstrap'
 import { Link } from "react-router-dom";
 import laptop1 from '../images/laptop.jpeg'
 import laptop2 from '../images/laptop2.jpeg'
 
 function Search() {
+    const [show, setShow] = useState(false)
     return (
         <div>
+            <ToastContainer className='mt-4 p-5' position='top-end'>
+                <Toast onClose={() => setShow(false)} show={show} delay={3000} autohide>
+                    <Toast.Header closeButton={false}>
+                        <img
+                            src="holder.js/20x20?text=%20"
+                            className="rounded me-2"
+                            alt=""
+                        />
+                        <strong className="me-auto">GatorBuy</strong>
+                    </Toast.Header>
+                    <Toast.Body>Added to cart</Toast.Body>
+                </Toast>
+            </ToastContainer>
             <Container>
                 <h4 style={{ fontWeight: 'bold', marginTop: '50px' }}>Showing 1 to 2 out of 2 items : </h4>
                 <div className='d-flex justify-content-end mb-3'>
@@ -35,7 +49,7 @@ function Search() {
                             <Col>
                                 <div style={{ marginLeft: '30px' }}>
                                     <Link to="/result"><Button variant='outline-primary' size="lg" style={{ fontWeight: 'bold', marginTop: '15px', width: '180px', height: '50px', borderRadius: '20px' }}>View More</Button></Link>
-                                    <Button variant='success' size="lg" style={{ fontWeight: 'bold', marginTop: '15px', width: '180px', height: '50px', borderRadius: '20px' }}>Add to Cart</Button>
+                                    <Button variant='success' size="lg" style={{ fontWeight: 'bold', marginTop: '15px', width: '180px', height: '50px', borderRadius: '20px' }} onClick={() => setShow(true)}>Add to Cart</Button>
                                     <a href='/checkout'><Button variant='warning' size="lg" style={{ fontWeight: 'bold', marginTop: '15px', width: '180px', height: '50px', borderRadius: '20px' }}>Buy Now</Button></a>
                                 </div>
                             </Col>
@@ -58,7 +72,7 @@ function Search() {
                             <Col>
                                 <div style={{ marginLeft: '30px' }}>
                                     <Link to="/result"><Button variant='outline-primary' size="lg" style={{ fontWeight: 'bold', marginTop: '15px', width: '180px', height: '50px', borderRadius: '20px' }}>View More</Button></Link>
-                                    <Button variant='success' size="lg" style={{ fontWeight: 'bold', marginTop: '15px', width: '180px', height: '50px', borderRadius: '20px' }}>Add to Cart</Button>
+                                    <Button variant='success' size="lg" style={{ fontWeight: 'bold', marginTop: '15px', width: '180px', height: '50px', borderRadius: '20px' }} onClick={() => setShow(true)}>Add to Cart</Button>
                                     <a href='/checkout'><Button variant='warning' size="lg" style={{ fontWeight: 'bold', marginTop: '15px', width: '180px', height: '50px', borderRadius: '20px' }}>Buy Now</Button></a>
                                 </div>
                             </Col>
