@@ -30,7 +30,7 @@ function Login({ role }) {
                     {
                         searchParams.get('from') === 'checkout' ?
                             <Button
-                                href='/checkout'
+                                href='/checkout?from=login'
                                 variant='success'
                                 id="cancel-button"
                                 style={{

@@ -3,6 +3,7 @@ import { Container, Tabs, Tab, Button, Row, Col } from 'react-bootstrap'
 import { useWindowSize } from '../resize'
 import History from './History'
 import Info from './Info'
+import Messages from './Messages'
 
 function Account() {
     const height = useWindowSize()
@@ -25,6 +26,9 @@ function Account() {
                     </Tab>
                     <Tab eventKey="history" title="Purchase History">
                         <History />
+                    </Tab>
+                    <Tab eventKey="messages" title="Messages">
+                        <Messages />
                     </Tab>
                 </Tabs>
             </Container>

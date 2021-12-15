@@ -42,7 +42,7 @@ function Registration() {
                     </div>
                     <div>
                         <Link to="/"><button class="btn btn-danger btn-lg" id="cancel-button" style={{ marginRight: '20px', width: '275px' }}>Cancel</button></Link>
-                        <button type="submit" class="btn btn-success btn-lg" id="success-button" style={{ width: '275px' }}>Submit</button>
+                        <button type="submit" class="btn btn-success btn-lg" id="success-button" style={{ width: '275px' }} href="javascript:history.back()">Submit</button>
                     </div>
                     <div style={{ textAlign: 'center', marginTop: '30px' }}>
                         <label>Already had an account?</label><br />

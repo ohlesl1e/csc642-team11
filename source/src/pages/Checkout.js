@@ -1,8 +1,10 @@
 import React from 'react'
 import { Col, Container, Row, Button, Form, Card, Table } from 'react-bootstrap'
+import { useSearchParams } from 'react-router-dom'
 import { useWindowSize } from '../resize'
 
 export default function Checkout() {
+    const [searchParams] = useSearchParams()
     const height = useWindowSize()
     return (
         <div style={{ minHeight: (height - 240.2) }} className='mt-4'>
@@ -16,28 +18,32 @@ export default function Checkout() {
                             <Col md={5}><a href='/registration'><Button variant='warning' style={{ width: '100%' }}>Register</Button></a></Col>
                         </Row>
                         <Form style={{ marginTop: '1rem' }}>
-                            <Form.Group className='mb-3'>
-                                <Form.Label>*Name</Form.Label>
-                                <Form.Control
-                                    placeholder='Enter your name'
-                                    type='name' style={{ border: '2px solid black', borderRadius: '20px' }} />
-                            </Form.Group>
+                            {searchParams.get('from') !== 'login' &&
+                                <div>
+                                    <Form.Group className='mb-3'>
+                                        <Form.Label>*Name</Form.Label>
+                                        <Form.Control
+                                            placeholder='Enter your name'
+                                            type='name' style={{ border: '2px solid black', borderRadius: '20px' }} />
+                                    </Form.Group>
 
-                            <Form.Group className='mb-3'>
-                                <Form.Label>*SF State Email</Form.Label>
-                                <Form.Control
-                                    placeholder='Enter your SF State email'
-                                    type='email' style={{ border: '2px solid black', borderRadius: '20px' }}
-                                />
-                            </Form.Group>
+                                    <Form.Group className='mb-3'>
+                                        <Form.Label>*SF State Email</Form.Label>
+                                        <Form.Control
+                                            placeholder='Enter your SF State email'
+                                            type='email' style={{ border: '2px solid black', borderRadius: '20px' }}
+                                        />
+                                    </Form.Group>
 
-                            <Form.Group className='mb-3'>
-                                <Form.Label>*Phone</Form.Label>
-                                <Form.Control
-                                    placeholder='Enter your phone number'
-                                    type='tele' style={{ border: '2px solid black', borderRadius: '20px' }}
-                                />
-                            </Form.Group>
+                                    <Form.Group className='mb-3'>
+                                        <Form.Label>*Phone</Form.Label>
+                                        <Form.Control
+                                            placeholder='Enter your phone number'
+                                            type='tele' style={{ border: '2px solid black', borderRadius: '20px' }}
+                                        />
+                                    </Form.Group>
+                                </div>
+                            }
 
                             <Form.Group className='mb-3'>
                                 <Form.Label>*Pickup location</Form.Label>

@@ -31,7 +31,7 @@ function Seller() {
                     defaultActiveKey='messages'
                     style={{ marginTop: '20px', marginBottom: '20px' }}
                 >
-                    <Tab eventKey="messages" title="Buyer Messages">
+                    <Tab eventKey="messages" title="Messages">
                         <Messages />
                     </Tab>
                     <Tab eventKey="selling" title="Selling" >

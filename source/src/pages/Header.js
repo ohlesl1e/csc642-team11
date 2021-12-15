@@ -18,25 +18,46 @@ function Header() {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className='nav-fill w-100 nav-bar-element'>
                             <Nav.Item>
-                                <Form>
-                                    <InputGroup>
-                                        <Form.Select defaultValue='All' style={{ maxWidth: '20%' }}>
-                                            <option>All</option>
-                                            <option>Textbooks</option>
-                                            <option>Cloathing</option>
-                                            <option>Electronics</option>
-                                            <option>School Supplies</option>
-                                            <option>Dorm</option>
-                                        </Form.Select>
-                                        <FormControl
-                                            type="search"
-                                            placeholder="Search"
-                                            className="me-6"
-                                            aria-label="Search"
-                                        />
-                                        <a href='/search'><Button variant='warning'>Search</Button></a>
-                                    </InputGroup>
-                                </Form>
+                                {window.innerWidth >= 992 ?
+                                    <Form style={{ maxWidth: '80%', margin: 'auto' }}>
+                                        <InputGroup>
+                                            <Form.Select defaultValue='All' style={{ maxWidth: '20%' }}>
+                                                <option>All</option>
+                                                <option>Textbooks</option>
+                                                <option>Cloathing</option>
+                                                <option>Electronics</option>
+                                                <option>School Supplies</option>
+                                                <option>Dorm</option>
+                                            </Form.Select>
+                                            <FormControl
+                                                type="search"
+                                                placeholder="Search"
+                                                className="me-6"
+                                                aria-label="Search"
+                                            />
+                                            <a href='/search'><Button variant='warning'>Search</Button></a>
+                                        </InputGroup>
+                                    </Form> :
+                                    <Form style={{ maxWidth: '98%'}}>
+                                        <InputGroup>
+                                            <Form.Select defaultValue='All' style={{ maxWidth: '20%' }}>
+                                                <option>All</option>
+                                                <option>Textbooks</option>
+                                                <option>Cloathing</option>
+                                                <option>Electronics</option>
+                                                <option>School Supplies</option>
+                                                <option>Dorm</option>
+                                            </Form.Select>
+                                            <FormControl
+                                                type="search"
+                                                placeholder="Search"
+                                                className="me-6"
+                                                aria-label="Search"
+                                            />
+                                            <a href='/search'><Button variant='warning'>Search</Button></a>
+                                        </InputGroup>
+                                    </Form>
+                                }
                             </Nav.Item>
                         </Nav>
                         <Nav className='nav-bar-element'>
