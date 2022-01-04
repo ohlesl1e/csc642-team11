@@ -1,6 +1,8 @@
 # csc642-team11
 
-## how to run the app
+## Design, usability test, focus group documentations are in the `documentation` folder
+
+## How to run the app
 ```
 cd source
 npm install
